@@ -5,6 +5,10 @@ import "./App.css";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import Slideshow from "./components/Slideshow";
+import BlurSlideshow from "./components/BlurSlideshow";
+import ShutterSlideshow from "./components/ShutterSlideshow";
+import RealisticApertureSlideshow from "./components/RealisticApertureSlideshow";
+import ApertureSlideshow from "./components/ApertureSlideshow";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +16,9 @@ function App() {
   return (
     <>
       <Slideshow />
+      <ApertureSlideshow />
+      <RealisticApertureSlideshow />
+      <ShutterSlideshow />
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -23,6 +30,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+      <BlurSlideshow />
       <h1>Vite + React</h1> 
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
