@@ -3,6 +3,6 @@ import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/temp_Vite-TypeScript/",
+  base: "/photoStudio/",
   plugins: [react()],
 });
