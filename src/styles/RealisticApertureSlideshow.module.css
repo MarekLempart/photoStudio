@@ -33,11 +33,11 @@
   
   /* Stylizacja dla każdego listka przysłony */
   .leaf:nth-child(1) { transform: rotate(0deg) translate(0%, 0%); }
-  .leaf:nth-child(2) { transform: rotate(45deg) translate(0%, 0%); }
-  .leaf:nth-child(3) { transform: rotate(90deg) translate(0%, 0%); }
-  .leaf:nth-child(4) { transform: rotate(135deg) translate(0%, 0%); }
-  .leaf:nth-child(5) { transform: rotate(180deg) translate(0%, 0%); }
-  .leaf:nth-child(6) { transform: rotate(225deg) translate(0%, 0%); }
-  .leaf:nth-child(7) { transform: rotate(270deg) translate(0%, 0%); }
-  .leaf:nth-child(8) { transform: rotate(315deg) translate(0%, 0%); }
+  .leaf:nth-child(2) { transform: rotate(45deg) translate(20%, 20%); }
+  .leaf:nth-child(3) { transform: rotate(90deg) translate(40%, 40%); }
+  .leaf:nth-child(4) { transform: rotate(135deg) translate(60%, 60%); }
+  .leaf:nth-child(5) { transform: rotate(180deg) translate(80%, 80%); }
+  .leaf:nth-child(6) { transform: rotate(225deg) translate(100%, 100%); }
+  .leaf:nth-child(7) { transform: rotate(270deg) translate(120%, 120%); }
+  .leaf:nth-child(8) { transform: rotate(315deg) translate(140%, 140%); }
   

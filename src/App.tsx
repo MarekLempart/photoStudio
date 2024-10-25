@@ -14,8 +14,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <Slideshow />
+    <>      
       <ApertureSlideshow />
       <RealisticApertureSlideshow />
       <ShutterSlideshow />
@@ -30,6 +29,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+      <Slideshow />
       <BlurSlideshow />
       <h1>Vite + React</h1> 
       <div className="card">
