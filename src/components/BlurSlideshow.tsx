@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import styles from "../styles/BlurSlideshow.module.css";
+import css from "../styles/BlurSlideshow.module.css";
 import imagesMethodologySystem from "../data/imageData";
 
 const BlurSlideshow = () => {
@@ -27,11 +27,11 @@ const BlurSlideshow = () => {
   }, []);
 
   return (
-    <div className={styles.slideshowContainer}>
+    <div className={css.slideshowContainer}>
       <motion.img
         src={imagesMethodologySystem[currentImageIndex].src}
         alt={imagesMethodologySystem[currentImageIndex].id}
-        className={styles.image}
+        className={css.image}
         initial={{ filter: "blur(0px)" }}
         animate={{ filter: isAnimating ? "blur(30px)" : "blur(0px)" }} // Rozmycie animacji
         transition={{ duration: 1 }}

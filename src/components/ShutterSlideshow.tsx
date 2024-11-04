@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
-import styles from "../styles/ShutterSlideshow.module.css";
+import css from "../styles/ShutterSlideshow.module.css";
 import imagesMethodologySystem from "../data/imageData";
 
 const ShutterSlideshow = () => {
@@ -28,12 +28,12 @@ const ShutterSlideshow = () => {
   }, [nextSlide]);
 
   return (
-    <div className={styles.apertureContainer}>
+    <div className={css.apertureContainer}>
       {/* Obrazek */}
       <motion.img
         src={imagesMethodologySystem[currentImageIndex].src}
         alt={imagesMethodologySystem[currentImageIndex].id}
-        className={styles.image}
+        className={css.image}
         initial={{ opacity: 0.8 }}
         animate={{ opacity: isAnimating ? 0 : 1 }} // Delikatne pojawienie się obrazu
         transition={{ duration: 0.6 }}
@@ -43,7 +43,7 @@ const ShutterSlideshow = () => {
       {Array.from({ length: 10 }).map((_, index) => (
         <motion.div
           key={index}
-          className={styles.leaf}
+          className={css.leaf}
           initial={{ rotate: 0, scaleY: 1 }}
           animate={
             isAnimating

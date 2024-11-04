@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import styles from "../styles/ApertureSlideshow.module.css";
+import css from "../styles/ApertureSlideshow.module.css";
 import imagesMethodologySystem from "../data/imageData";
 
 const leafCount = 8; // Ustawiamy liczbę listków przysłony
@@ -30,11 +30,11 @@ const ApertureSlideshow = () => {
   const angleStep = 360 / leafCount;
 
   return (
-    <div className={styles.apertureContainer}>
+    <div className={css.apertureContainer}>
       <motion.img
         src={imagesMethodologySystem[currentImageIndex].src}
         alt={imagesMethodologySystem[currentImageIndex].id}
-        className={styles.image}
+        className={css.image}
         animate={{ opacity: isAnimating ? 0 : 1 }}
         transition={{ duration: 0.8 }}
         onAnimationComplete={isAnimating ? handleAnimationComplete : undefined}
@@ -44,7 +44,7 @@ const ApertureSlideshow = () => {
       {Array.from({ length: leafCount }).map((_, index) => (
         <motion.div
           key={index}
-          className={styles.leaf}
+          className={css.leaf}
           style={{
             transform: `rotate(${index * angleStep}deg) translateY(-50%)`,
           }}

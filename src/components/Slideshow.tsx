@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import styles from "../styles/Slideshow.module.css";
+import css from "../styles/Slideshow.module.css";
 import imagesMethodologySystem from "../data/imageData";
 
 const Slideshow = () => {
@@ -27,13 +27,13 @@ const Slideshow = () => {
   }, []);
 
   return (
-    <div className={styles.slideshowContainer}>
-      <div className={styles.lens}>
+    <div className={css.slideshowContainer}>
+      <div className={css.lens}>
         {/* Obrazek */}
         <motion.img
           src={imagesMethodologySystem[currentImageIndex].src}
           alt={imagesMethodologySystem[currentImageIndex].id}
-          className={styles.image}
+          className={css.image}
           initial={{ opacity: 1 }}
           animate={{ opacity: isAnimating ? 0 : 1 }} // Przezroczystość animacji
           transition={{ duration: 0.5 }}
@@ -42,7 +42,7 @@ const Slideshow = () => {
         {/* Ciemna nakładka */}
         {isAnimating && (
           <motion.div
-            className={styles.overlay}
+            className={css.overlay}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
