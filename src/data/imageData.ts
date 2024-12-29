@@ -1,20 +1,26 @@
 // src/data/imageData.ts
 
-import imgFunctionalPatterns from "../img/System-functionalPatterns_09.webp";
-import imgMotionData from "../img/System-motionData_11.webp";
-import imgMovMed from "../img/System-movMed_10.webp";
+import imgRegis_01 from "../img/_DSC6963-Edit.webp";
+import imgRegis_02 from "../img/_DSC6919.webp";
+import imgRegis_03 from "../img/_DSC6928.webp";
+import imgRegis_04 from "../img/_DSC7418-Edit.webp";
+import imgRegis_05 from "../img/_DSC6937-Edit.webp";
 
-// Definiujemy typ dla każdego elementu w tablicy obrazów
+// Definicja typu dla kazdego elementu w tablicy obrazów
+
 interface ImageItem {
-  id: string;
-  src: string;
+    id: string;
+    src: string;
 }
 
-// Tworzymy tablicę obrazów z typem `ImageItem[]`
-const imagesMethodologySystem: ImageItem[] = [
-  { id: "functionalPatterns", src: imgFunctionalPatterns },
-  { id: "movMed", src: imgMovMed },
-  { id: "motionData", src: imgMotionData },
+// Tworzenie tablicy obrazów z typu 'ImageItem[]'
+
+const imageRegis: ImageItem[] = [
+    { id: "Regis_01", src: imgRegis_01 },
+    { id: "Regis_02", src: imgRegis_02 },
+    { id: "Regis_03", src: imgRegis_03 },
+    { id: "Regis_04", src: imgRegis_04 },
+    { id: "Regis_05", src: imgRegis_05 },
 ];
 
-export default imagesMethodologySystem;
+export default imageRegis;
