@@ -231,23 +231,70 @@ export const SocialMediaWrapper = styled.div`
   }
 `;
 
-export const ThemeToggleButton = styled.button`
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: ${({ theme }) => theme.colors.textPrimary};
-  font-size: 24px;
-  margin: 5px auto 0px 0px;
+export const ThemeToggleButtonWrapper = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
+export const ThemeToggleSlider = styled.div<{ $active: boolean }>`
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: ${({ $active, theme }) => $active ? theme.colors.colTeak : theme.colors.colGrannySmith};
+  transition: background-color 0.6s ease, justify-content 0.6s ease;
+  display: flex;
+  justify-content: ${props => (props.$active ? "flex-end" : "flex-start")};
+  align-items: center;
+  padding: 2px;
+`;
+
+export const ThemeToggleButton = styled.button`
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: ${({ theme }) => theme.colors.bgPrimary};
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.6s ease;
+  
+  &.active {
+    transform: scale(1.1);
+  }
+  
   &:hover {
-    color: ${({ theme }) => theme.colors.hover};
+    transform: scale(1.3);
   }
 
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 30px;
-    margin: 10px auto 10px 10px;
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: ${({ theme }) => theme.colors.textPrimary};
   }
 `;
+
+// export const ThemeToggleButton = styled.button`
+//   background: none;
+//   border: none;
+//   cursor: pointer;
+//   color: ${({ theme }) => theme.colors.textPrimary};
+//   font-size: 24px;
+//   margin: 5px auto 0px 0px;
+
+//   &:hover {
+//     color: ${({ theme }) => theme.colors.hover};
+//   }
+
+//   @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
+//     font-size: 30px;
+//     margin: 10px auto 10px 10px;
+//   }
+// `;
 
 export const MobileIconsContainer = styled.div`
   display: flex;

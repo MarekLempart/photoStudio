@@ -27,6 +27,8 @@ import {
   MobileNavLink,
   SocialMediaWrapper,
   Overlay,
+  ThemeToggleButtonWrapper,
+  ThemeToggleSlider,
   ThemeToggleButton,
   MobileIconsContainer,
 } from "../styles/HeaderStyles";
@@ -140,17 +142,32 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
               <FaFacebook />
             </a>
           </SocialMediaWrapper>
-          <ThemeToggleButton onClick={toggleTheme}>
+          {/* <ThemeToggleButton onClick={toggleTheme}>
             {currentTheme === "dark" ? <FaCloudMoon /> : <FaCloudSun />}
-          </ThemeToggleButton>
+          </ThemeToggleButton> */}
+          <ThemeToggleButtonWrapper>
+            <ThemeToggleSlider onClick={toggleTheme} $active={currentTheme === "dark"}>
+              <ThemeToggleButton className={currentTheme === "dark" ? "active" : ""}>
+                {currentTheme === "dark" ? <FaCloudMoon /> : <FaCloudSun />}
+              </ThemeToggleButton>
+            </ThemeToggleSlider>
+          </ThemeToggleButtonWrapper>
         </Nav>
 
         {/* Kontener dla mobilnych ikon */}
         {isMobile && (
           <MobileIconsContainer>
-            <ThemeToggleButton onClick={toggleTheme}>
+            {/* <ThemeToggleButton onClick={toggleTheme}>
               {currentTheme === "dark" ? <FaCloudMoon /> : <FaCloudSun />}
-            </ThemeToggleButton>
+            </ThemeToggleButton> */}
+            <ThemeToggleButtonWrapper>
+              <ThemeToggleSlider onClick={toggleTheme} $active={currentTheme === "dark"}>
+                <ThemeToggleButton className={currentTheme === "dark" ? "active" : ""}>
+                  {currentTheme === "dark" ? <FaCloudMoon /> : <FaCloudSun />}
+                </ThemeToggleButton>
+              </ThemeToggleSlider>
+            </ThemeToggleButtonWrapper>
+            
             <MobileMenuIcon onClick={toggleMenu}>
               <FaBars />
             </MobileMenuIcon>
