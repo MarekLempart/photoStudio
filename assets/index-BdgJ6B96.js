@@ -174,7 +174,7 @@ Error generating stack: `+a.message+`
 `,DI=pe(Zf.h3)`
   font-family: "Caveat", cursive;
   font-size: 28px;
-  color: ${({theme:e})=>e.colors.textWhite};
+  color: ${({theme:e})=>e.colors.textPrimary};
   text-align: center;
   line-height: 1.5;
 
