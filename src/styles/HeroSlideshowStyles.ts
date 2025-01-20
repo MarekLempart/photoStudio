@@ -51,7 +51,7 @@ export const TextOverlay = styled.div`
 export const HeroText = styled(motion.h3)`
   font-family: "Caveat", cursive;
   font-size: 28px;
-  color: ${({ theme }) => theme.colors.textWhite};
+  color: ${({ theme }) => theme.colors.textPrimary};
   text-align: center;
   line-height: 1.5;
 
