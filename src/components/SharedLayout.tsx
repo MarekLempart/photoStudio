@@ -27,7 +27,7 @@ const SharedLayout: React.FC = () => {
 
   const antIcon = (
     <LoadingOutlined
-      style={{ fontSize: 96, color: theme.colors.textOrange }}
+      style={{ fontSize: 96, color: theme.colors.colTeak }}
       spin
     />
   );
