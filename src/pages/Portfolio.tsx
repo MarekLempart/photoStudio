@@ -1,6 +1,6 @@
 // src/pages/Portfolio.tsx
 
-import HeroSlideshow from "../components/HeroSlideshow";
+import PortfolioGallery from "../components/PortfolioGallery";
 import {
   Container,
 } from "../styles/PortfolioStyles";
@@ -8,7 +8,7 @@ import {
 const Portfolio = () => {
   return (
     <Container>
-      <HeroSlideshow />
+      <PortfolioGallery />
     </Container>
   );
 };
