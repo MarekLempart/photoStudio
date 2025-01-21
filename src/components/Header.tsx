@@ -14,6 +14,9 @@ import {
 } from "react-icons/fa";
 import { MdContactPhone } from "react-icons/md";
 import { FaPenNib } from "react-icons/fa";
+import { AiOutlineSolution } from "react-icons/ai";
+import { IoImagesOutline } from "react-icons/io5";
+import { GiCutDiamond } from "react-icons/gi";
 import { useHeaderVisibility } from "../hooks/useHeaderVisibility";
 import useThemeContext from "../hooks/useThemeContext";
 import {
@@ -42,23 +45,23 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
   const theme = useTheme();
   const { theme: currentTheme, toggleTheme } = useThemeContext();
-  const breakpointMobile = useMemo(
-    () => parseInt(theme.breakpoints.mobile),
-    [theme.breakpoints.mobile]
+  const breakpointTablet = useMemo(
+    () => parseInt(theme.breakpoints.tablet),
+    [theme.breakpoints.tablet]
   );
   const isHeaderVisible = useHeaderVisibility();
-  const [isMobile, setIsMobile] = useState<boolean>(
-    window.innerWidth <= breakpointMobile
+  const [isMobileOrTablet, setIsMobileOrTablet] = useState<boolean>(
+    window.innerWidth <= breakpointTablet
   );
 
   const overlayRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleResize = () => {
-      const isNowMobile = window.innerWidth <= breakpointMobile;
-      setIsMobile(isNowMobile);
+      const isNowMobileOrTablet = window.innerWidth <= breakpointTablet;
+      setIsMobileOrTablet(isNowMobileOrTablet);
 
-      if (!isNowMobile && isMenuOpen) {
+      if (!isNowMobileOrTablet && isMenuOpen) {
         toggleMenu();
       }
     };
@@ -67,10 +70,10 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [isMenuOpen, toggleMenu, breakpointMobile]);
+  }, [isMenuOpen, toggleMenu, breakpointTablet]);
 
   const handleMenuClick = (event: React.MouseEvent) => {
-    if (isMobile) {
+    if (isMobileOrTablet) {
       toggleMenu();
     }
     event.stopPropagation();
@@ -93,7 +96,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
 
   const handleSocialMediaClick = (event: React.MouseEvent) => {
     event.stopPropagation();
-    if (isMobile) {
+    if (isMobileOrTablet) {
       toggleMenu();
     }
   };
@@ -112,21 +115,22 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
         <Logo>
           <ImageComponent />
         </Logo>
+
         <Nav>
           <StyledNavLink as={NavLink} to="/" onClick={handleMenuClick}>
             <FaHome /> Home
           </StyledNavLink>
 
           <StyledNavLink as={NavLink} to="/portfolio" onClick={handleMenuClick}>
-            <FaPenNib /> Portfolio
+            <IoImagesOutline /> Portfolio
           </StyledNavLink>
 
           <StyledNavLink as={NavLink} to="/offer" onClick={handleMenuClick}>
-            <FaPenNib /> Oferta
+            <GiCutDiamond /> Oferta
           </StyledNavLink>
 
           <StyledNavLink as={NavLink} to="/regulations" onClick={handleMenuClick}>
-            <FaPenNib /> Regulamin
+            <AiOutlineSolution /> Regulamin
           </StyledNavLink>
 
           <StyledNavLink as={NavLink} to="/contact" onClick={handleMenuClick}>
@@ -136,6 +140,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
           <StyledNavLink as={NavLink} to="/about" onClick={handleMenuClick}>
             <FaPenNib /> O mnie
           </StyledNavLink>
+          
         <SocialMediaWrapper>
             <a
               href="https://www.instagram.com/marta_mmphoto"
@@ -164,7 +169,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
         </Nav>
 
         {/* Kontener dla mobilnych ikon */}
-        {isMobile && (
+        {isMobileOrTablet && (
           <MobileIconsContainer>
             <ThemeToggleButtonWrapper>
               <ThemeToggleSlider onClick={toggleTheme} $active={currentTheme === "dark"}>
@@ -193,15 +198,15 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
             </MobileNavLink>
 
             <MobileNavLink as={NavLink} to="/portfolio" onClick={handleMenuClick}>
-              <FaPenNib /> Portfolio
+              <IoImagesOutline /> Portfolio
             </MobileNavLink>
 
             <MobileNavLink as={NavLink} to="/offer" onClick={handleMenuClick}>
-              <FaPenNib /> Oferta
+              <GiCutDiamond /> Oferta
             </MobileNavLink>
 
             <MobileNavLink as={NavLink} to="/regulations" onClick={handleMenuClick}>
-              <FaPenNib /> Regulamin
+              <AiOutlineSolution /> Regulamin
             </MobileNavLink>
 
             <MobileNavLink as={NavLink} to="/contact" onClick={handleMenuClick}>

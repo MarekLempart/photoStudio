@@ -70,7 +70,7 @@ export const StyledImage = styled.img`
 export const Nav = styled.nav`
   display: none;
 
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     display: flex;
     align-items: center;
     gap: 24px;
@@ -125,7 +125,7 @@ export const MobileMenuIcon = styled.div`
     height: 28px;
   }
 
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     display: none;
   }
 `;
@@ -271,7 +271,7 @@ export const MobileIconsContainer = styled.div`
   align-items: center;
   gap: 20px;
 
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     display: none;
   }
 `;
