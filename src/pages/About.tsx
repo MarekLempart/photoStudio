@@ -1,4 +1,4 @@
-// src/pages/AboutMe.tsx
+// src/pages/About.tsx
 
 import React from "react";
 import personImageData from "../data/personImageData";

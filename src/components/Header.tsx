@@ -117,6 +117,18 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
             <FaHome /> Home
           </StyledNavLink>
 
+          <StyledNavLink as={NavLink} to="/portfolio" onClick={handleMenuClick}>
+            <FaPenNib /> Portfolio
+          </StyledNavLink>
+
+          <StyledNavLink as={NavLink} to="/offer" onClick={handleMenuClick}>
+            <FaPenNib /> Oferta
+          </StyledNavLink>
+
+          <StyledNavLink as={NavLink} to="/regulations" onClick={handleMenuClick}>
+            <FaPenNib /> Regulamin
+          </StyledNavLink>
+
           <StyledNavLink as={NavLink} to="/contact" onClick={handleMenuClick}>
             <MdContactPhone /> Kontakt
           </StyledNavLink>
@@ -142,9 +154,6 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
               <FaFacebook />
             </a>
           </SocialMediaWrapper>
-          {/* <ThemeToggleButton onClick={toggleTheme}>
-            {currentTheme === "dark" ? <FaCloudMoon /> : <FaCloudSun />}
-          </ThemeToggleButton> */}
           <ThemeToggleButtonWrapper>
             <ThemeToggleSlider onClick={toggleTheme} $active={currentTheme === "dark"}>
               <ThemeToggleButton $active={currentTheme === "dark"}>
@@ -157,9 +166,6 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
         {/* Kontener dla mobilnych ikon */}
         {isMobile && (
           <MobileIconsContainer>
-            {/* <ThemeToggleButton onClick={toggleTheme}>
-              {currentTheme === "dark" ? <FaCloudMoon /> : <FaCloudSun />}
-            </ThemeToggleButton> */}
             <ThemeToggleButtonWrapper>
               <ThemeToggleSlider onClick={toggleTheme} $active={currentTheme === "dark"}>
                 <ThemeToggleButton $active={currentTheme === "dark"}>
@@ -184,6 +190,18 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
 
             <MobileNavLink as={NavLink} to="/" onClick={handleMenuClick}>
               <FaHome /> Home
+            </MobileNavLink>
+
+            <MobileNavLink as={NavLink} to="/portfolio" onClick={handleMenuClick}>
+              <FaPenNib /> Portfolio
+            </MobileNavLink>
+
+            <MobileNavLink as={NavLink} to="/offer" onClick={handleMenuClick}>
+              <FaPenNib /> Oferta
+            </MobileNavLink>
+
+            <MobileNavLink as={NavLink} to="/regulations" onClick={handleMenuClick}>
+              <FaPenNib /> Regulamin
             </MobileNavLink>
 
             <MobileNavLink as={NavLink} to="/contact" onClick={handleMenuClick}>

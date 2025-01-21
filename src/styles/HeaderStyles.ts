@@ -245,17 +245,18 @@ export const ThemeToggleButton = styled.button<{ $active: boolean }>`
   /* border: none; */
   border: solid 2px
     ${({ $active, theme }) =>
-      $active ? theme.colors.accentActive : theme.colors.accentInactive};
+      $active ? theme.colors.hover : theme.colors.distinction};
   display: flex;
   justify-content: center;
   align-items: center;
   transform: ${({ $active }) =>
     $active ? "translateX(10px)" : "translateX(-10px)"};
   cursor: pointer;
-  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, border-color 0.6s ease;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
+    border-color: ${({ theme }) => theme.colors.hoverButton};
   }
 
   svg {
@@ -268,7 +269,7 @@ export const ThemeToggleButton = styled.button<{ $active: boolean }>`
 export const MobileIconsContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
     display: none;
