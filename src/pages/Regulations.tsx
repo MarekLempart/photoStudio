@@ -1,6 +1,6 @@
 // src/pages/Regulations.tsx
 
-import HeroSlideshow from "../components/HeroSlideshow";
+import RegulationsText from "../components/RegulationsText";
 import PortfolioGallery from "../components/PortfolioGallery";
 import {
   Container,
@@ -9,7 +9,7 @@ import {
 const Regulations = () => {
   return (
     <Container>
-      <HeroSlideshow />
+      <RegulationsText />
       <PortfolioGallery />
     </Container>
   );
