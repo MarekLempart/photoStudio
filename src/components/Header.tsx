@@ -147,7 +147,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
           </ThemeToggleButton> */}
           <ThemeToggleButtonWrapper>
             <ThemeToggleSlider onClick={toggleTheme} $active={currentTheme === "dark"}>
-              <ThemeToggleButton className={currentTheme === "dark" ? "active" : ""}>
+              <ThemeToggleButton $active={currentTheme === "dark"}>
                 {currentTheme === "dark" ? <FaCloudMoon /> : <FaCloudSun />}
               </ThemeToggleButton>
             </ThemeToggleSlider>
@@ -162,7 +162,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
             </ThemeToggleButton> */}
             <ThemeToggleButtonWrapper>
               <ThemeToggleSlider onClick={toggleTheme} $active={currentTheme === "dark"}>
-                <ThemeToggleButton className={currentTheme === "dark" ? "active" : ""}>
+                <ThemeToggleButton $active={currentTheme === "dark"}>
                   {currentTheme === "dark" ? <FaCloudMoon /> : <FaCloudSun />}
                 </ThemeToggleButton>
               </ThemeToggleSlider>

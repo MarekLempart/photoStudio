@@ -52,7 +52,7 @@ export const lightTheme = {
     bgPrimary: theme.colors.colMilkPunch,
     textPrimary: theme.colors.colPickledBluewood,
     accent: theme.colors.colTeak,
-    hover: theme.colors.colTallow,
+    hover: theme.colors.colGrannySmith,
     hoverButton: theme.colors.colAvocado,
     distinction: theme.colors.colGrannySmith,
   },

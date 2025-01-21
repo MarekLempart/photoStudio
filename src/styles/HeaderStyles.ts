@@ -47,22 +47,6 @@ export const Logo = styled.div`
   color: ${({ theme }) => theme.colors.textPrimary};
 `;
 
-// export const LogoName = styled.h3`
-//   font-size: 24px;
-//   margin: 30px 5px;
-//   color: ${({ theme }) => theme.colors.accent};
-
-//   @media ${({ theme }) => theme.media.tablet} {
-//     font-size: 30px;
-//     margin: 10px 10px;
-//   }
-
-//   @media ${({ theme }) => theme.media.desktop} {
-//     font-size: 52px;
-//     margin: 10px 20px;
-//   }
-// `;
-
 export const StyledImage = styled.img`
   display: block;
   width: 70px;
@@ -240,35 +224,38 @@ export const ThemeToggleButtonWrapper = styled.div`
 
 export const ThemeToggleSlider = styled.div<{ $active: boolean }>`
   position: relative;
-  width: 60px;
+  width: 55px;
   height: 30px;
   border-radius: 20px;
-  background-color: ${({ $active, theme }) => $active ? theme.colors.colTeak : theme.colors.colGrannySmith};
-  transition: background-color 0.6s ease, justify-content 0.6s ease;
+  background-color: ${({ $active, theme }) =>
+    $active ? theme.colors.colTeak : theme.colors.colGrannySmith};
+  transition: background-color 0.6s ease;
   display: flex;
-  justify-content: ${props => (props.$active ? "flex-end" : "flex-start")};
+  justify-content: ${({ $active }) => ($active ? "flex-end" : "flex-start")};
   align-items: center;
   padding: 2px;
+  cursor: pointer;
 `;
 
-export const ThemeToggleButton = styled.button`
+export const ThemeToggleButton = styled.button<{ $active: boolean }>`
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: ${({ theme }) => theme.colors.bgPrimary};
-  border: none;
+  /* border: none; */
+  border: solid 2px
+    ${({ $active, theme }) =>
+      $active ? theme.colors.accentActive : theme.colors.accentInactive};
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: ${({ $active }) =>
+    $active ? "translateX(10px)" : "translateX(-10px)"};
   cursor: pointer;
   transition: transform 0.6s ease;
-  
-  &.active {
-    transform: scale(1.1);
-  }
-  
+
   &:hover {
-    transform: scale(1.3);
+    transform: scale(1.05);
   }
 
   svg {
@@ -277,24 +264,6 @@ export const ThemeToggleButton = styled.button`
     fill: ${({ theme }) => theme.colors.textPrimary};
   }
 `;
-
-// export const ThemeToggleButton = styled.button`
-//   background: none;
-//   border: none;
-//   cursor: pointer;
-//   color: ${({ theme }) => theme.colors.textPrimary};
-//   font-size: 24px;
-//   margin: 5px auto 0px 0px;
-
-//   &:hover {
-//     color: ${({ theme }) => theme.colors.hover};
-//   }
-
-//   @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
-//     font-size: 30px;
-//     margin: 10px auto 10px 10px;
-//   }
-// `;
 
 export const MobileIconsContainer = styled.div`
   display: flex;
