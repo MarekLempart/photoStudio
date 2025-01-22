@@ -23,7 +23,7 @@ export const PhoneInputStyledContainer = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
-    border: 1px solid ${({ theme }) => theme.colors.textOrange};
+    border: 1px solid ${({ theme }) => theme.colors.hover};
     border-radius: 5px;
     padding: 10px;
     background-color: ${({ theme }) => theme.colors.bgWhite};
@@ -34,7 +34,7 @@ export const PhoneInputStyledContainer = styled.div`
     border: none;
     outline: none;
     font-size: 16px;
-    color: ${({ theme }) => theme.colors.textDarkNavy};
+    color: ${({ theme }) => theme.colors.colPickledBluewood};
   }
 
   .PhoneInputCountry {
@@ -46,7 +46,7 @@ export const PhoneInputStyledContainer = styled.div`
     outline: none;
     background: transparent;
     font-size: 16px;
-    color: ${({ theme }) => theme.colors.textDarkNavy};
+    color: ${({ theme }) => theme.colors.colPickledBluewood};
     cursor: pointer;
   }
 
@@ -104,16 +104,16 @@ export const InputTitle = styled.div`
 export const Input = styled.input`
   width: 100%;
   padding: 10px;
-  border: 1px solid ${({ theme }) => theme.colors.textOrange};
-  color: ${({ theme }) => theme.colors.textDarkNavy};
+  border: 1px solid ${({ theme }) => theme.colors.hover};
+  color: ${({ theme }) => theme.colors.colPickledBluewood};
   border-radius: 5px;
 `;
 
 export const TextArea = styled.textarea`
   width: 100%;
   padding: 10px;
-  color: ${({ theme }) => theme.colors.textDarkNavy};
-  border: 1px solid ${({ theme }) => theme.colors.textOrange};
+  color: ${({ theme }) => theme.colors.colPickledBluewood};
+  border: 1px solid ${({ theme }) => theme.colors.hover};
   border-radius: 5px;
   resize: none;
 `;
@@ -121,8 +121,8 @@ export const TextArea = styled.textarea`
 export const SubmitButton = styled.button`
   margin: 0 auto;
   padding: 10px 20px;
-  background: ${({ theme }) => theme.colors.bgOrange};
-  color: ${({ theme }) => theme.colors.textDarkNavy};
+  background: ${({ theme }) => theme.colors.colTeak};
+  color: ${({ theme }) => theme.colors.colPickledBluewood};
   border: none;
   border-radius: 5px;
   cursor: pointer;
