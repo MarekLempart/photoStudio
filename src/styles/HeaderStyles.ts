@@ -8,7 +8,7 @@ export const HeaderWrapper = styled.header`
   align-items: center;
   padding: 40px 16px;
   height: 130px;
-  background-color: ${({ theme }) => theme.colors.bgPrimary};
+  background-color: ${({ theme }) => theme.colors.bgHeader};
   border-bottom: 5px solid ${({ theme }) => theme.colors.colGrannySmith};
   box-shadow: 0px 15px 20px 5px rgba(168, 162, 138, 0.5);
 
@@ -79,7 +79,7 @@ export const Nav = styled.nav`
 
 export const StyledNavLink = styled.a`
   position: relative;
-  color: ${({ theme }) => theme.colors.textPrimary};
+  color: ${({ theme }) => theme.colors.textHeader};
   text-decoration: none;
   font-size: 16px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -146,7 +146,7 @@ export const MobileNav = styled.div`
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: ${({ theme }) => theme.colors.bgPrimary};
+  background-color: ${({ theme }) => theme.colors.bgHeader};
   z-index: 999;
   padding: 24px 16px;
 
@@ -161,7 +161,7 @@ export const MobileNav = styled.div`
     background: none;
     border: none;
     cursor: pointer;
-    color: ${({ theme }) => theme.colors.textPrimary};
+    color: ${({ theme }) => theme.colors.textHeader};
 
     &:hover {
       color: ${({ theme }) => theme.colors.hover};
@@ -178,7 +178,7 @@ export const MobileNavLink = styled(StyledNavLink)`
   align-self: flex-start;
   margin-left: 15px;
   font-size: 18px;
-  color: ${({ theme }) => theme.colors.textPrimary};
+  color: ${({ theme }) => theme.colors.textHeader};
   transition: color 250ms ease-in-out;
 
   &:hover {

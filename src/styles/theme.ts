@@ -51,7 +51,9 @@ export const lightTheme = {
   colors: {
     ...theme.colors,
     bgPrimary: theme.colors.colMilkPunch,
+    bgHeader: theme.colors.colPickledBluewood,
     textPrimary: theme.colors.colPickledBluewood,
+    textHeader: theme.colors.colMilkPunch,
     accent: theme.colors.colTeak,
     hover: theme.colors.colGrannySmith,
     hoverButton: theme.colors.colAvocado,
@@ -64,7 +66,9 @@ export const darkTheme = {
   colors: {
     ...theme.colors,
     bgPrimary: theme.colors.colPickledBluewood,
+    bgHeader: theme.colors.colPickledBluewood,
     textPrimary: theme.colors.colMilkPunch,
+    textHeader: theme.colors.colMilkPunch,
     accent: theme.colors.colTeak,
     hover: theme.colors.colTallow,
     hoverButton: theme.colors.colAvocado,
