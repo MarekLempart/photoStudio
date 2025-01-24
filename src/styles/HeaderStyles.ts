@@ -8,8 +8,8 @@ export const HeaderWrapper = styled.header`
   align-items: center;
   padding: 40px 16px;
   height: 130px;
-  background-color: ${({ theme }) => theme.colors.bgHeader};
-  border-bottom: 5px solid ${({ theme }) => theme.colors.colGrannySmith};
+  background-color: ${({ theme }) => theme.colors.bgSecondary};
+  border-bottom: 5px solid ${({ theme }) => theme.colors.accent};
   box-shadow: 0px 15px 20px 5px rgba(168, 162, 138, 0.5);
 
   position: fixed;
@@ -37,7 +37,7 @@ export const HeaderWrapper = styled.header`
   }
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    border-bottom: 10px solid ${({ theme }) => theme.colors.colGrannySmith};
+    border-bottom: 10px solid ${({ theme }) => theme.colors.accent};
   }
 `;
 
@@ -79,7 +79,7 @@ export const Nav = styled.nav`
 
 export const StyledNavLink = styled.a`
   position: relative;
-  color: ${({ theme }) => theme.colors.textHeader};
+  color: ${({ theme }) => theme.colors.textSecondary};
   text-decoration: none;
   font-size: 16px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -96,7 +96,7 @@ export const StyledNavLink = styled.a`
     left: 0;
     width: 0%;
     height: 2px;
-    background: ${({ theme }) => theme.colors.textOrange};
+    background: ${({ theme }) => theme.colors.accent};
     transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -120,7 +120,7 @@ export const MobileMenuIcon = styled.div`
   cursor: pointer;
 
   svg {
-    fill: ${({ theme }) => theme.colors.textPrimary};
+    fill: ${({ theme }) => theme.colors.textSecondary};
     width: 28px;
     height: 28px;
   }
@@ -146,7 +146,7 @@ export const MobileNav = styled.div`
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: ${({ theme }) => theme.colors.bgHeader};
+  background-color: ${({ theme }) => theme.colors.bgSecondary};
   z-index: 999;
   padding: 24px 16px;
 
@@ -161,7 +161,7 @@ export const MobileNav = styled.div`
     background: none;
     border: none;
     cursor: pointer;
-    color: ${({ theme }) => theme.colors.textHeader};
+    color: ${({ theme }) => theme.colors.textSecondary};
 
     &:hover {
       color: ${({ theme }) => theme.colors.hover};
@@ -178,7 +178,7 @@ export const MobileNavLink = styled(StyledNavLink)`
   align-self: flex-start;
   margin-left: 15px;
   font-size: 18px;
-  color: ${({ theme }) => theme.colors.textHeader};
+  color: ${({ theme }) => theme.colors.textSecondary};
   transition: color 250ms ease-in-out;
 
   &:hover {
