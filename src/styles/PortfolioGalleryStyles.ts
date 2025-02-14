@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const GalleryWrapper = styled.div`
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 `;
 
 export const GalleryContainer = styled.div`
@@ -30,11 +30,7 @@ export const ThumbnailWrapper = styled.div`
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
-
     aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     &:hover {
         transform: scale(1.05);
