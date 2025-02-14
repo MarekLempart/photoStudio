@@ -14,11 +14,12 @@ export const GalleryContainer = styled.div`
     grid-template-columns: repeat(2, 1fr);
 
     @media ${({ theme }) => theme.media.tablet} {
-        gap: 24px;
+        gap: 18px;
         grid-template-columns: repeat(4, 1fr);
     }
 
     @media ${({ theme }) => theme.media.desktop} {
+        gap: 20px;
         grid-template-columns: repeat(6, 1fr);
     }
 `;
@@ -34,7 +35,7 @@ export const ThumbnailWrapper = styled.div`
     aspect-ratio: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     &:hover {
         transform: scale(1.05);
