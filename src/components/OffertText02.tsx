@@ -1,13 +1,13 @@
-// src/components/RegulationsText.tsx
+// src/components/OffertText01.tsx
 import React from "react";
-import { regulationsData } from "../data/regulationsTextData";
-import { RegulationsTextContainer, Section, Title, Point, SubPoint } from "../styles/RegulationsTextStyles";
+import { offertTextData02 } from "../data/offertTextData02";
+import { OffertTextContainer, Section, Title, Point, SubPoint } from "../styles/OffertTextStyles";
 
-const RegulationsText: React.FC = () => {
+const OffertText02: React.FC = () => {
     return (
-        <RegulationsTextContainer>
-            <Title>{regulationsData.title}</Title>
-            {regulationsData.sections.map((section, sectionIndex) => (
+        <OffertTextContainer>
+            <Title>{offertTextData02.title}</Title>
+            {offertTextData02.sections.map((section, sectionIndex) => (
                 <Section key={sectionIndex}>
                     <h3>{section.title}</h3>
                     {section.content.map((item, itemIndex) => (
@@ -24,8 +24,8 @@ const RegulationsText: React.FC = () => {
                     ))}
                 </Section>
             ))}
-        </RegulationsTextContainer>
+        </OffertTextContainer>
     );
 };
 
-export default RegulationsText;
+export default OffertText02;

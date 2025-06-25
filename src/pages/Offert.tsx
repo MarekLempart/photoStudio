@@ -1,6 +1,6 @@
 // src/pages/Offer.tsx
-
-import HeroSlideshow from "../components/HeroSlideshow";
+import OffertText01 from "../components/OffertText01";
+import OffertText02 from "../components/OffertText02";
 import PortfolioGallery from "../components/PortfolioGallery";
 import {
   Container,
@@ -9,7 +9,8 @@ import {
 const Offer = () => {
   return (
     <Container>
-      <HeroSlideshow />
+      <OffertText01 />
+      <OffertText02 />
       <PortfolioGallery />
     </Container>
   );

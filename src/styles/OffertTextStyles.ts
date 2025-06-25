@@ -1,7 +1,7 @@
-// src/styles/RegulationsTextStyles.ts
+// src/styles/OffertTextStyles.ts
 import styled from "styled-components";
 
-export const RegulationsTextContainer = styled.div`
+export const OffertTextContainer = styled.div`
     width: 90%;
     max-width: ${({ theme }) => theme.breakpoints.desktop};
     margin: 70px auto 0px;
