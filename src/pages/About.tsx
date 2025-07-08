@@ -1,5 +1,4 @@
 // src/pages/About.tsx
-
 import React from "react";
 import personImageData from "../data/personImageData";
 import personTextData from "../data/personTextData";

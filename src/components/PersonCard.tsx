@@ -1,5 +1,4 @@
 // src/components/PersonCard.tsx
-
 import React from "react";
 import { ImageCardContainer, StyledImageCard } from "../styles/ImageCardStyles";
 import { TextContainer, StyledText } from "../styles/PersonTextStyles";

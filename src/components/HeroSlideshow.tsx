@@ -1,5 +1,4 @@
 // src/components/HeroSlideshow.tsx
-
 import { useState, useEffect } from "react";
 import imageHero from "../data/imageDataHero";
 import {
@@ -52,18 +51,18 @@ const HeroSlideshow = () => {
     screenSize === "mobile"
       ? imageHero[currentImageIndex].srcMobile
       : screenSize === "tablet"
-      ? imageHero[currentImageIndex].srcTablet
-      : imageHero[currentImageIndex].srcDesktop;
+        ? imageHero[currentImageIndex].srcTablet
+        : imageHero[currentImageIndex].srcDesktop;
 
   return (
     <SlideshowContainer>
       <StyledImage
         src={currentImage}
         alt={imageHero[currentImageIndex].id}
-        // initial={{ filter: "blur(0px)" }}
-        // animate={{ filter: isAnimating ? "blur(30px)" : "blur(0px)" }}
-        // transition={{ duration: 1 }}
-        // onAnimationComplete={isAnimating ? handleAnimationComplete : undefined}
+      // initial={{ filter: "blur(0px)" }}
+      // animate={{ filter: isAnimating ? "blur(30px)" : "blur(0px)" }}
+      // transition={{ duration: 1 }}
+      // onAnimationComplete={isAnimating ? handleAnimationComplete : undefined}
       />
       <DarkOverlay
         initial={{ opacity: 0 }} // Rozpoczyna bez zaciemnienia

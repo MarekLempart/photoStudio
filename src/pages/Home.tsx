@@ -1,5 +1,4 @@
 // src/pages/Home.tsx
-
 import HeroSlideshow from "../components/HeroSlideshow";
 import {
   Container,

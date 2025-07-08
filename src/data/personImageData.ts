@@ -1,6 +1,5 @@
 // src/data/personImageData.ts
-
-import person1 from "../img/Person01_Marta.webp";
+import person1 from "../img/Person/_DSC3672-Edit_wynik.webp";
 // import person3 from "../img/Person03_Marek.webp";
 
 interface ImageItemPerson {

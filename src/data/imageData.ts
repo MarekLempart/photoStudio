@@ -1,5 +1,4 @@
 // src/data/imageData.ts
-
 import imgRegis_01 from "../img/_DSC6963-Edit.webp";
 import imgRegis_02 from "../img/_DSC6919.webp";
 import imgRegis_03 from "../img/_DSC6928.webp";

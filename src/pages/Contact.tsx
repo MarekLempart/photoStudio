@@ -1,5 +1,4 @@
 // src/pages/Contact.tsx
-
 import React from "react";
 import ContactDetails from "../components/ContactDetails";
 import ContactForm from "../components/ContactForm";

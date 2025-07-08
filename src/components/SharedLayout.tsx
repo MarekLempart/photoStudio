@@ -1,5 +1,4 @@
 // src/components/SharedLayout.tsx
-
 import { useState, useEffect, Suspense } from "react";
 import { useTheme } from "styled-components";
 import Header from "./Header";

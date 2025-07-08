@@ -1,5 +1,4 @@
 // src/styles/OfferStyles.ts
-
 import styled from "styled-components";
 
 export const Container = styled.div`

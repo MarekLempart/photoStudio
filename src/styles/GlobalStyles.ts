@@ -1,5 +1,4 @@
 // src/styles/GlobalStyles.ts
-
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
@@ -33,7 +32,7 @@ const GlobalStyles = createGlobalStyle`
   .page-container {
     width: 100%;
     max-width: ${({ theme }) =>
-      theme.breakpoints.desktop};
+    theme.breakpoints.desktop};
     padding: 0px 5px;
   }
 

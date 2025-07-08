@@ -1,5 +1,4 @@
 // src/components/PortfolioGalleryStyles.ts
-
 import styled from 'styled-components';
 
 export const GalleryWrapper = styled.div`
@@ -49,3 +48,20 @@ export const Thumbnail = styled.img`
     display: block;
     border-radius: 8px;
 `;
+
+export const CategoryBlock = styled.section`
+    margin-bottom: 10px;
+    margin-top: 80px;
+`;
+
+export const CategoryTitle = styled.h2`
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+`;
+
+export const CategoryDescription = styled.p`
+    font-size: 1rem;
+    color: ${({ theme }) => theme.colors.textSecondary};
+    margin-bottom: 16px;
+`;
+

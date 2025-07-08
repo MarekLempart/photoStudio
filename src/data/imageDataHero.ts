@@ -1,14 +1,16 @@
 // src/data/imageDataHero.ts
+import imgHero_01_mobile from "../img/Hero/_DSC4179_mobile_wynik.webp";
+import imgHero_01_tablet from "../img/Hero/DSC03307_tablet_wynik.webp";
+import imgHero_01_desktop from "../img/Hero/DSC02726_desktop_wynik.webp";
+import imgHero_02_mobile from "../img/Hero/_DSC5449_mobile_wynik.webp";
+import imgHero_02_tablet from "../img/Hero/_DSC1057_tablet_wynik.webp";
+import imgHero_02_desktop from "../img/Hero/DSC04967_desktop_wynik.webp";
+import imgHero_03_mobile from "../img/Hero/_DSC8190_mobile_wynik.webp";
+import imgHero_03_tablet from "../img/Hero/_DSC3904_tablet_wynik.webp";
+import imgHero_03_desktop from "../img/Hero/DSC09834_desktop_wynik.webp";
+import imgHero_04_mobile from "../img/Hero/_DSC8436_mobile_wynik.webp";
+import imgHero_04_desktop from "../img/Hero/_DSC3904_desktop_wynik.webp";
 
-import imgHero_01_mobile from "../img/01_mobile_Hero.webp";
-import imgHero_01_tablet from "../img/01_tablet_Hero.webp";
-import imgHero_01_desktop from "../img/01_desktop_Hero.webp";
-import imgHero_02_mobile from "../img/02_mobile_Hero.webp";
-import imgHero_02_tablet from "../img/02_tablet_Hero.webp";
-import imgHero_02_desktop from "../img/02_desktop_Hero.webp";
-import imgHero_03_mobile from "../img/03_mobile_Hero.webp";
-import imgHero_03_tablet from "../img/03_tablet_Hero.webp";
-import imgHero_03_desktop from "../img/03_desktop_Hero.webp";
 interface ImageItem {
   id: string;
   srcMobile: string;
@@ -16,25 +18,31 @@ interface ImageItem {
   srcDesktop: string;
 }
 
-const imageRegisHero: ImageItem[] = [
+const imageMMHero: ImageItem[] = [
   {
-    id: "Regis_01",
+    id: "MM_01",
     srcMobile: imgHero_01_mobile,
     srcTablet: imgHero_01_tablet,
     srcDesktop: imgHero_01_desktop,
   },
   {
-    id: "Regis_02",
+    id: "MM_02",
     srcMobile: imgHero_02_mobile,
     srcTablet: imgHero_02_tablet,
     srcDesktop: imgHero_02_desktop,
   },
   {
-    id: "Regis_03",
+    id: "MM_03",
     srcMobile: imgHero_03_mobile,
     srcTablet: imgHero_03_tablet,
     srcDesktop: imgHero_03_desktop,
   },
+  {
+    id: "MM_04",
+    srcMobile: imgHero_04_mobile,
+    srcTablet: imgHero_02_tablet,
+    srcDesktop: imgHero_04_desktop,
+  },
 ];
 
-export default imageRegisHero;
+export default imageMMHero;

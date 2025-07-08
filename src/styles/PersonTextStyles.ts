@@ -1,5 +1,4 @@
 // src/styles/PersonTextStyles.ts
-
 import styled from "styled-components";
 
 export const TextContainer = styled.div`

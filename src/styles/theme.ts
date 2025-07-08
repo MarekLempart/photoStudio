@@ -1,5 +1,4 @@
 // src/styles/theme.ts
-
 export const theme = {
   colors: {
     textWhite: "#f8f9fa",
@@ -19,7 +18,7 @@ export const theme = {
     bgBrightBrown: "#a14d26",
     colGrannySmith: "#7c9c9a",
     colPickledBluewood: "#253943",
-    colMilkPunch: "#fff5d6 ",    
+    colMilkPunch: "#fff5d6 ",
     colTallow: "#a8a28a",
     colTeak: "#b38b6d",
     colAvocado: "#8f9b69",

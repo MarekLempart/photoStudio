@@ -1,5 +1,4 @@
 // src/styles/ContactStyles.ts
-
 import styled from "styled-components";
 
 export const PersonCardContainer = styled.div<{ $reverse: boolean }>`

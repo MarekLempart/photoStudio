@@ -1,5 +1,4 @@
 // src/styles/HeaderStyles.ts
-
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
@@ -245,7 +244,7 @@ export const ThemeToggleButton = styled.button<{ $active: boolean }>`
   /* border: none; */
   border: solid 2px
     ${({ $active, theme }) =>
-      $active ? theme.colors.hover : theme.colors.distinction};
+    $active ? theme.colors.hover : theme.colors.distinction};
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,5 +1,4 @@
 // src/styles/ContactFormStyles.ts
-
 import styled from "styled-components";
 
 export const PhoneInputStyledContainer = styled.div`
@@ -79,7 +78,7 @@ export const InputContainer = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  width: 100%;
+  max-width: 100%;
   position: relative;
   padding: 0px 20px;
 

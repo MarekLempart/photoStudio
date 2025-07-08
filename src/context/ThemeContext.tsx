@@ -1,5 +1,4 @@
 // src/context/ThemeContext.tsx // remove it
-
 import React, { createContext, useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "../styles/theme";

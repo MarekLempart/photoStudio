@@ -1,5 +1,4 @@
 // src/components/Header.tsx
-
 import React, { useState, useEffect, useRef, useMemo } from "react";
 import { NavLink } from "react-router-dom";
 import { useTheme } from "styled-components";
@@ -108,9 +107,8 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
   return (
     <>
       <HeaderWrapper
-        className={`${isHeaderVisible ? "visible" : "hidden"} ${
-          isMenuOpen ? "menu-open" : ""
-        }`}
+        className={`${isHeaderVisible ? "visible" : "hidden"} ${isMenuOpen ? "menu-open" : ""
+          }`}
       >
         <Logo>
           <ImageComponent />
@@ -140,8 +138,8 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
           <StyledNavLink as={NavLink} to="/about" onClick={handleMenuClick}>
             <FaPenNib /> O mnie
           </StyledNavLink>
-          
-        <SocialMediaWrapper>
+
+          <SocialMediaWrapper>
             <a
               href="https://www.instagram.com/marta_mmphoto"
               target="_blank"
@@ -178,7 +176,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
                 </ThemeToggleButton>
               </ThemeToggleSlider>
             </ThemeToggleButtonWrapper>
-            
+
             <MobileMenuIcon onClick={toggleMenu}>
               <FaBars />
             </MobileMenuIcon>

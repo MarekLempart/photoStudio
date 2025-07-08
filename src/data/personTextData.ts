@@ -1,5 +1,4 @@
 // src/data/personTextData.ts
-
 const personTextData = [
   {
     id: "person1",
@@ -12,9 +11,9 @@ const personTextData = [
   // {
   //   id: "person2",
   //   description:
-  //     "Stronę zaprojektował i wykonał Marek Lempart – FullStack Developer, urbanista, planista przestrzenny i mój przewodnik.",
+  //     "XXXXXX",
   //   quote:
-  //     '"Od zawsze fascynowały mnie komputeryzacja, cyfrowa fotografia oraz urbanistyka. Z czasem odkryłem nową pasję – tworzenie aplikacji webowych, zarówno od strony front-endu, jak i back-endu. Obecnie projektuję i wdrażam nowoczesne aplikacje webowe, dostosowane do potrzeb użytkowników. W pracy z front-endem korzystam z JavaScript i TypeScript oraz React, a na zapleczu z Node.js. Każdy projekt to dla mnie wyzwanie, które pozwala rozwijać moje umiejętności i tworzyć funkcjonalne, estetyczne rozwiązania na miarę współczesnych wymagań."',
+  //     '"ZZZZZZ"',
   // },
 ];
 

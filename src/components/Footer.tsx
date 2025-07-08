@@ -1,5 +1,4 @@
 // src/components/Footer.tsx
-
 import {
   FooterContainer,
   // LogoContainer,
