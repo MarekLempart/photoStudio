@@ -43,14 +43,15 @@ const usePortfolioImages = (): Category[] => {
             const folderName = segments[2]; // 'kategoria1'
             const fileName = segments[3]; // '001_miniature.webp'
             const baseName = fileName.replace(/_miniature\.webp$/, ""); // '001'
+            const prettyFolder = folderName.charAt(0).toUpperCase() + folderName.slice(1);
 
             // Tworzymy kategorię, jeśli nie istnieje
             if (!categoriesMap.has(folderName)) {
                 const index = categoriesMap.size + 1;
                 categoriesMap.set(folderName, {
                     id: folderName,
-                    name: `Kategoria ${index}`,
-                    description: `Krótki opis dla zdjęć w kategorii nr ${index}`,
+                    name: `Kategoria ${index} – ${prettyFolder}`,
+                    description: `Krótki opis dla zdjęć w folderze "${prettyFolder}" w kategorii nr ${index}`,
                     images: []
                 });
             }
@@ -68,7 +69,7 @@ const usePortfolioImages = (): Category[] => {
                 id: `${folderName}_${baseName}`,
                 thumbnail,
                 fullSize,
-                alt: `To jest zdjęcie z kategorii: ${category.name} nr ${category.images.length + 1}`
+                alt: `Zdjęcie z folderu "${prettyFolder}", pozycja ${category.images.length + 1}`
             };
             category.images.push(imageData);
         });
