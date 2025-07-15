@@ -23,7 +23,15 @@ export const Container = styled.div`
 export const SliderContainer = styled.div`
   width: 90%;
   max-width: ${({ theme }) => theme.breakpoints.desktop};
-  margin: 40px auto;        /* odstęp od tekstu */
-  position: relative;       /* by z-index działał wewnątrz */
-  overflow: hidden;         /* schowa ewentualne „wychodzące” elementy */
+  margin: 5px auto;
+  position: relative;
+  overflow: hidden;
+
+  @media ${({ theme }) => theme.media.tablet} {
+    padding: ${({ theme }) => theme.spacing.tabletPadding};
+  }
+
+  @media ${({ theme }) => theme.media.desktop} {
+    padding: ${({ theme }) => theme.spacing.desktopPadding};
+  }
 `;
