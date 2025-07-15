@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const SliderWrapper = styled.div`
     width: 100%;
-    margin: 30px auto;
+    margin: 5px auto;
     overflow: hidden;
 
     .slick-slide > div {
@@ -30,6 +30,6 @@ export const SliderWrapper = styled.div`
 
     @media (max-width: 768px) {
         width: 100%;
-        margin: 10px auto;
+        margin: 0px auto;
     }
 `;

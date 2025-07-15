@@ -24,14 +24,17 @@ export const SliderContainer = styled.div`
   width: 90%;
   max-width: ${({ theme }) => theme.breakpoints.desktop};
   margin: 5px auto;
+  padding: 0px;
   position: relative;
   overflow: hidden;
 
   @media ${({ theme }) => theme.media.tablet} {
-    padding: ${({ theme }) => theme.spacing.tabletPadding};
+    max-width: ${({ theme }) => theme.breakpoints.tablet};
+    padding: 5px;
   }
 
-  @media ${({ theme }) => theme.media.desktop} {
-    padding: ${({ theme }) => theme.spacing.desktopPadding};
+  @media ${({ theme }) => theme.media.mobile} {
+    max-width: ${({ theme }) => theme.breakpoints.mobile};
+    padding: 5px;
   }
 `;
