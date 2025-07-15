@@ -26,12 +26,18 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ folder }) => {
         swipeToSlide: true,
         responsive: [
             {
-                breakpoint: 1200, // tablet
-                settings: { slidesToShow: 4, slidesToScroll: 2 },
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
+                },
             },
             {
-                breakpoint: 768, // mobile
-                settings: { slidesToShow: 2, slidesToScroll: 2 },
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
             },
         ],
     };
@@ -48,6 +54,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ folder }) => {
                                     alt={`Galeria ${folder}, miniatura ${idx + 1}`}
                                     style={{
                                         width: '100%',
+                                        height: 'auto',
                                         display: 'block',
                                         objectFit: 'cover',
                                     }}
