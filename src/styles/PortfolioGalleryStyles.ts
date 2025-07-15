@@ -1,5 +1,21 @@
-// src/components/PortfolioGalleryStyles.ts
+// src/styles/PortfolioGalleryStyles.ts
 import styled from 'styled-components';
+
+export const CategoryBlock = styled.section`
+    margin: 80px 0 10px;
+`;
+
+export const CategoryTitle = styled.h2`
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+`;
+
+export const CategoryDescription = styled.p`
+    font-size: 1rem;
+    color: ${({ theme }) => theme.colors.textSecondary};
+    margin-bottom: 16px;
+`;
+
 
 export const GalleryWrapper = styled.div`
     width: 100%;
@@ -28,7 +44,7 @@ export const ThumbnailWrapper = styled.div`
     cursor: pointer;
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 15px 20px rgba(168, 162, 138, 0.6);
     transition: transform 0.2s;
 
     aspect-ratio: 1;
@@ -48,20 +64,3 @@ export const Thumbnail = styled.img`
     display: block;
     border-radius: 8px;
 `;
-
-export const CategoryBlock = styled.section`
-    margin-bottom: 10px;
-    margin-top: 80px;
-`;
-
-export const CategoryTitle = styled.h2`
-    font-size: 1.5rem;
-    margin-bottom: 8px;
-`;
-
-export const CategoryDescription = styled.p`
-    font-size: 1rem;
-    color: ${({ theme }) => theme.colors.textSecondary};
-    margin-bottom: 16px;
-`;
-

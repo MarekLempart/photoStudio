@@ -24,16 +24,23 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  #root {
+  #root, .app-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
   }
 
-  .page-container {
+  /* #root {
+    display: flex;
+    justify-content: center;
+  } */
+
+  .app-container {
     width: 100%;
-    max-width: ${({ theme }) =>
-    theme.breakpoints.desktop};
+    max-width: ${({ theme }) => theme.breakpoints.desktop};
     padding: 0px 5px;
+    margin: 0 auto;
   }
 
   a {
@@ -60,14 +67,20 @@ const GlobalStyles = createGlobalStyle`
     text-align: left;
   }
 
-  .header-visible {
+  /* .header-visible {
     transform: translateY(0);
     transition: transform 0.3s ease-in-out;
-  }
+  } */
 
-  .header-hidden {
+  /* .header-hidden {
     transform: translateY(-100%);
     transition: transform 0.3s ease-in-out;
+  } */
+  
+  .slick-prev:before,
+  .slick-next:before {
+    color: ${({ theme }) => theme.colors.primary};
+    font-size: 1.5rem;
   }
 `;
 

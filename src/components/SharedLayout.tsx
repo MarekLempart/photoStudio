@@ -7,10 +7,6 @@ import { MainWrapper, Spiner } from "../styles/SharedLayoutStyles";
 import { LoadingOutlined } from "@ant-design/icons";
 import { Outlet } from "react-router-dom";
 
-// const LazyOutlet = lazy(() =>
-//   import("react-router-dom").then((module) => ({ default: module.Outlet }))
-// );
-
 const SharedLayout: React.FC = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);

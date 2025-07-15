@@ -23,7 +23,7 @@ export const ImageCardContainer = styled.div`
   margin: 0px auto;
   border-radius: 10px;
   background: #000;
-  box-shadow: 5px 15px 20px rgba(168, 162, 138, 0.5);
+  box-shadow: 10px 15px 20px rgba(168, 162, 138, 0.6);
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     width: 100%;

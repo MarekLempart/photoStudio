@@ -2,14 +2,25 @@
 import styled from "styled-components";
 import { Spin } from "antd";
 
-export const MainWrapper = styled.div`
-  padding-top: ${({ theme }) =>
-    theme.headerHeight};
-  min-height: 100vh;
+// export const MainWrapper = styled.div`
+//   padding-top: ${({ theme }) =>
+//     theme.headerHeight};
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   position: relative;
+// `;
+
+export const MainWrapper = styled.main`
+  width: 100%;
+  padding-top: 130px;
+  flex-grow: 1;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   position: relative;
 `;
 

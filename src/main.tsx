@@ -1,7 +1,9 @@
-// scr/main.tsc
+// scr/main.tsx
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-// import { HashRouter } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeContextProvider } from './context/ThemeContext';
 import GlobalStyles from './styles/GlobalStyles';
@@ -18,4 +20,3 @@ createRoot(document.getElementById('root')!).render(
     </ThemeContextProvider>
   </StrictMode>
 );
-

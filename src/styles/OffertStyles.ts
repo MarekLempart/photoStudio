@@ -1,4 +1,4 @@
-// src/styles/OfferStyles.ts
+// src/styles/OffertStyles.ts
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -18,4 +18,12 @@ export const Container = styled.div`
   @media ${({ theme }) => theme.media.desktop} {
     padding: ${({ theme }) => theme.spacing.desktopPadding};
   }
+`;
+
+export const SliderContainer = styled.div`
+  width: 90%;
+  max-width: ${({ theme }) => theme.breakpoints.desktop};
+  margin: 40px auto;        /* odstęp od tekstu */
+  position: relative;       /* by z-index działał wewnątrz */
+  overflow: hidden;         /* schowa ewentualne „wychodzące” elementy */
 `;

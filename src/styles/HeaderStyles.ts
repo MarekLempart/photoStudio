@@ -9,7 +9,7 @@ export const HeaderWrapper = styled.header`
   height: 130px;
   background-color: ${({ theme }) => theme.colors.bgSecondary};
   border-bottom: 5px solid ${({ theme }) => theme.colors.accent};
-  box-shadow: 0px 15px 20px 5px rgba(168, 162, 138, 0.5);
+  box-shadow: 0px 15px 20px 5px rgba(168, 162, 138, 0.6);
 
   position: fixed;
   top: 0;
