@@ -12,14 +12,15 @@ export const SliderWrapper = styled.div`
 
     .slick-slide img {
         width: 100%;
+        aspect-ratio: 1 / 1;
         margin: auto;
         object-fit: cover;
         border-radius: 8px;
     }
 `;
 
-export const SlideImage = styled.img`
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-`;
+// export const SlideImage = styled.img`
+//     width: 100%;
+//     aspect-ratio: 1 / 1;
+//     object-fit: cover;
+// `;

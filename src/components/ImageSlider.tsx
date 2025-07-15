@@ -1,8 +1,10 @@
 // src/components/ImageSlider.tsx
 import React from 'react';
 import Slider from 'react-slick';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
 import useSliderImages from '../hooks/useSliderImages';
-import { SliderWrapper, SlideImage } from '../styles/ImageSliderStyles';
+import { SliderWrapper } from '../styles/ImageSliderStyles';
 
 interface ImageSliderProps {
     // folder: string;
@@ -10,7 +12,8 @@ interface ImageSliderProps {
 }
 
 const ImageSlider: React.FC<ImageSliderProps> = ({ folder }) => {
-    const images = useSliderImages(folder);
+    const thumbnails = useSliderImages(folder);
+    const getFullSize = (thumb: string) => thumb.replace('_miniature', '');
 
     const settings = {
         infinite: true,
@@ -34,15 +37,28 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ folder }) => {
     };
 
     return (
-        <SliderWrapper>
-            <Slider {...settings}>
-                {images.map((src, idx) => (
-                    <div key={idx}>
-                        <SlideImage src={src} alt={`Galeria ${folder} - ${idx + 1}`} />
-                    </div>
-                ))}
-            </Slider>
-        </SliderWrapper>
+        <PhotoProvider>
+            <SliderWrapper>
+                <Slider {...settings}>
+                    {thumbnails.map((src, idx) => (
+                        <div key={idx}>
+                            <PhotoView src={getFullSize(src)}>
+                                <img
+                                    src={src}
+                                    alt={`Galeria ${folder}, miniatura ${idx + 1}`}
+                                    style={{
+                                        width: '100%',
+                                        display: 'block',
+                                        objectFit: 'cover',
+                                    }}
+                                />
+                            </PhotoView>
+                        </div>
+                    ))}
+                </Slider>
+            </SliderWrapper>
+        </PhotoProvider>
+
     );
 };
 
