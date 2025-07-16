@@ -21,8 +21,8 @@ export const Container = styled.div`
 `;
 
 export const SliderContainer = styled.div`
-  width: 90%;
   max-width: ${({ theme }) => theme.breakpoints.desktop};
+  width: 90%;
   margin: 5px auto;
   padding: 0px;
   position: relative;
