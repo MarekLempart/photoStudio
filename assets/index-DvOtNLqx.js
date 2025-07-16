@@ -844,8 +844,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     padding: ${({theme:e})=>e.spacing.desktopPadding};
   }
 `,Z4=ae.div`
-  width: 90%;
   max-width: ${({theme:e})=>e.breakpoints.desktop};
+  width: 90%;
   margin: 5px auto;
   padding: 0px;
   position: relative;
