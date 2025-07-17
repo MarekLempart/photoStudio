@@ -2,11 +2,7 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-/* zapobiegamy poziomemu przewijaniu */
-  html, body {
-    overflow-x: hidden;
-  }
-  
+
   /* Reset */
   * {
     margin: 0;
