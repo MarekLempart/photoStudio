@@ -3,17 +3,19 @@ import React from 'react';
 import Slider from 'react-slick';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
-import useSliderImages from '../hooks/useSliderImages';
+import useSliderImages, { ImagePair, FolderKey } from '../hooks/useSliderImages';
 import { SliderWrapper } from '../styles/ImageSliderStyles';
 
 interface ImageSliderProps {
     // folder: string;
-    folder: 'wizerunkowe biznesowe' | 'oferta biznesowa';
+    folder: FolderKey;
+    // folder: 'wizerunkowe biznesowe' | 'oferta biznesowa';
 }
 
 const ImageSlider: React.FC<ImageSliderProps> = ({ folder }) => {
-    const thumbnails = useSliderImages(folder);
-    const getFullSize = (thumb: string) => thumb.replace('_miniature', '');
+    // const thumbnails = useSliderImages(folder);
+    // const getFullSize = (thumb: string) => thumb.replace('_miniature', '');
+    const images: ImagePair[] = useSliderImages(folder);
 
     const settings = {
         infinite: true,
@@ -46,11 +48,11 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ folder }) => {
         <PhotoProvider>
             <SliderWrapper>
                 <Slider {...settings}>
-                    {thumbnails.map((src, idx) => (
+                    {images.map(({ thumbnail, full }, idx) => (
                         <div key={idx}>
-                            <PhotoView src={getFullSize(src)}>
+                            <PhotoView src={full}>
                                 <img
-                                    src={src}
+                                    src={thumbnail}
                                     alt={`Galeria ${folder}, miniatura ${idx + 1}`}
                                     style={{
                                         width: '100%',
