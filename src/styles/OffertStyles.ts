@@ -38,3 +38,17 @@ export const SliderContainer = styled.div`
     padding: 5px;
   }
 `;
+
+// export const SliderContainer = styled.div`
+//   width: 100%;
+//   margin: 20px auto;
+//   padding: ${({ theme }) => theme.spacing.mobilePadding};
+
+//   @media ${({ theme }) => theme.media.tablet} {
+//     padding: ${({ theme }) => theme.spacing.tabletPadding};
+//   }
+
+//   @media ${({ theme }) => theme.media.desktop} {
+//     padding: ${({ theme }) => theme.spacing.desktopPadding};
+//   }
+// `;

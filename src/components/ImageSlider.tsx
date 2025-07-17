@@ -56,7 +56,9 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ folder }) => {
                                     alt={`Galeria ${folder}, miniatura ${idx + 1}`}
                                     style={{
                                         width: '100%',
-                                        height: 'auto',
+                                        aspectRatio: '1 / 1',
+                                        maxHeight: 'calc(100vh - 200px)',
+                                        // height: 'auto',
                                         display: 'block',
                                         objectFit: 'cover',
                                     }}

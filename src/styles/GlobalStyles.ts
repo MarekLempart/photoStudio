@@ -3,6 +3,13 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 
+  /* ograniczamy wielkość obrazków w PhotoView do viewportu */
+  .react-photo-view-img {
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: contain;
+  }
+
   /* Reset */
   * {
     margin: 0;
