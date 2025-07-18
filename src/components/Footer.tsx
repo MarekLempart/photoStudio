@@ -29,7 +29,6 @@ const Footer = () => {
                 <img src="placeholder-for-logo.png" alt="Photographer logo" />
             </PhotographerLogo> */}
 
-
       {/* Informacje na dole */}
       <FooterText>&copy; 2024 Template Vite - React/TS</FooterText>
     </FooterContainer>

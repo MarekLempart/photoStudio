@@ -21,7 +21,8 @@ export const SliderWrapper = styled.div`
     }
 
     .slick-list {
-        overflow: hidden
+        overflow: hidden;
+        margin: 0;
     }
 
     .slick-track {

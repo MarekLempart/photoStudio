@@ -1,17 +1,18 @@
 // src/pages/Offert.tsx
-import OffertText01 from "../components/OffertText01";
-import OffertText02 from "../components/OffertText02";
+import OffertText from "../components/OffertText";
 import ImageSlider from "../components/ImageSlider";
+import { offertTextData01 } from "../data/offertTextData01";
+import { offertTextData02 } from "../data/offertTextData02";
 import { Container, SliderContainer } from "../styles/OffertStyles";
 
 const Offert = () => {
   return (
     <Container>
-      <OffertText01 />
+      <OffertText data={offertTextData01} />
       <SliderContainer>
         <ImageSlider folder="wizerunkowe biznesowe" />
       </SliderContainer>
-      <OffertText02 />
+      <OffertText data={offertTextData02} />
       <SliderContainer>
         <ImageSlider folder="oferta biznesowa" />
       </SliderContainer>

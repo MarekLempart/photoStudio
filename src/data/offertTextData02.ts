@@ -1,18 +1,7 @@
 // src/data/offertTextData02.ts
-type OffertPoint02 = {
-    title: string; // h3
-    content: {
-        point: string; // Main point
-        subpoints?: string[]; // Subpoints
-    }[];
-};
+import { OffertTextData } from "./offertTextDataTypes";
 
-type OffertTextData02 = {
-    title: string; // h2
-    sections: OffertPoint02[];
-};
-
-export const offertTextData02: OffertTextData02 = {
+export const offertTextData02: OffertTextData = {
     title: "Dla biznesu",
     sections: [
         {
