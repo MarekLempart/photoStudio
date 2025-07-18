@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 20px;
   padding: ${({ theme }) => theme.spacing.mobilePadding};
-  margin: 0px auto 20px;
+  margin: 10px auto 20px;
 
   @media ${({ theme }) => theme.media.tablet} {
     flex-direction: row;
