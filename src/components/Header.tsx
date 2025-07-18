@@ -50,14 +50,14 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
   );
   const isHeaderVisible = useHeaderVisibility();
   const [isMobileOrTablet, setIsMobileOrTablet] = useState<boolean>(
-    window.innerWidth <= breakpointTablet
+    window.innerWidth < breakpointTablet
   );
 
   const overlayRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleResize = () => {
-      const isNowMobileOrTablet = window.innerWidth <= breakpointTablet;
+      const isNowMobileOrTablet = window.innerWidth < breakpointTablet;
       setIsMobileOrTablet(isNowMobileOrTablet);
 
       if (!isNowMobileOrTablet && isMenuOpen) {
