@@ -45,8 +45,8 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
   const theme = useTheme();
   const { theme: currentTheme, toggleTheme } = useThemeContext();
   const breakpointTablet = useMemo(
-    () => parseInt(theme.breakpoints.tablet),
-    [theme.breakpoints.tablet]
+    () => parseInt(theme.breakpoints.desktop),
+    [theme.breakpoints.desktop]
   );
   const isHeaderVisible = useHeaderVisibility();
   const [isMobileOrTablet, setIsMobileOrTablet] = useState<boolean>(
