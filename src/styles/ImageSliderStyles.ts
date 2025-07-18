@@ -20,13 +20,13 @@ export const SliderWrapper = styled.div`
         border-radius: 8px;
     }
 
-    .slick-list {
-        overflow: hidden;
-        margin: 0;
-    }
-
     .slick-track {
         display: flex;
+    }
+
+    & .slick-list {
+        margin: 0;
+        overflow: hidden;
     }
 
     @media (max-width: 768px) {
