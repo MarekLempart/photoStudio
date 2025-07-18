@@ -790,13 +790,13 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         border-radius: 8px;
     }
 
-    .slick-list {
-        overflow: hidden;
-        margin: 0;
-    }
-
     .slick-track {
         display: flex;
+    }
+
+    & .slick-list {
+        margin: 0;
+        overflow: hidden;
     }
 
     @media (max-width: 768px) {
