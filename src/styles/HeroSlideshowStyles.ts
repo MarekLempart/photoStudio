@@ -12,7 +12,7 @@ export const SlideshowContainer = styled.div`
   border-radius: 10px;
   background: #000;
   box-shadow: 10px 15px 20px rgba(168, 162, 138, 0.6);
-  margin: 30px auto 0px;
+  margin: 0px auto 0px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     height: 600px;

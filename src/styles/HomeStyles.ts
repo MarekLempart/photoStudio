@@ -20,40 +20,40 @@ export const Container = styled.div`
   }
 `;
 
-export const ItemsContainerNoirOrder = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 0px auto;
-  gap: 20px;
+// export const ItemsContainerNoirOrder = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   margin: 0px auto;
+//   gap: 20px;
 
-  @media ${({ theme }) => theme.media.tabletAndDesktop} {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 50px;
-  }
-`;
+//   @media ${({ theme }) => theme.media.tabletAndDesktop} {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     gap: 50px;
+//   }
+// `;
 
-export const ItemsContainerReverseOrder = styled(ItemsContainerNoirOrder)`
-  @media ${({ theme }) => theme.media.tabletAndDesktop} {
-    flex-direction: row-reverse;
-  }
-`;
+// export const ItemsContainerReverseOrder = styled(ItemsContainerNoirOrder)`
+//   @media ${({ theme }) => theme.media.tabletAndDesktop} {
+//     flex-direction: row-reverse;
+//   }
+// `;
 
-export const ItemContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  padding: 0px;
-  width: 100%;
+// export const ItemContainer = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex: 1;
+//   padding: 0px;
+//   width: 100%;
 
-  @media ${({ theme }) => theme.media.tabletAndDesktop} {
-    width: 50%;
-  }
-`;
+//   @media ${({ theme }) => theme.media.tabletAndDesktop} {
+//     width: 50%;
+//   }
+// `;

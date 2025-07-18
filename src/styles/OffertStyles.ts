@@ -21,21 +21,21 @@ export const Container = styled.div`
 `;
 
 export const SliderContainer = styled.div`
-  max-width: ${({ theme }) => theme.breakpoints.desktop};
+  max-width: ${({ theme }) => theme.breakpoints.mobile};
   width: 90%;
   margin: 5px auto;
-  padding: 0px;
+  padding: ${({ theme }) => theme.spacing.mobilePadding};
   position: relative;
   overflow: hidden;
 
   @media ${({ theme }) => theme.media.tablet} {
     max-width: ${({ theme }) => theme.breakpoints.tablet};
-    padding: 5px;
+    padding: ${({ theme }) => theme.spacing.tabletPadding};
   }
 
-  @media ${({ theme }) => theme.media.mobile} {
-    max-width: ${({ theme }) => theme.breakpoints.mobile};
-    padding: 5px;
+  @media ${({ theme }) => theme.media.desktop} {
+    max-width: ${({ theme }) => theme.breakpoints.desktop};
+    padding: 10px;
   }
 `;
 

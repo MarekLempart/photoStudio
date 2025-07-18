@@ -24,7 +24,7 @@ export const theme = {
     colAvocado: "#8f9b69",
   },
 
-  headerHeight: "70px",
+  headerHeight: "130px",
 
   breakpoints: {
     mobile: "768px",
