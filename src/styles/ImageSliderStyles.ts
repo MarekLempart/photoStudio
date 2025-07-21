@@ -3,8 +3,15 @@ import styled from 'styled-components';
 
 export const SliderWrapper = styled.div`
     width: 100%;
+    position: relative;
+    max-width: 100%;
     margin: 5px auto;
     overflow: hidden;
+
+    .slick-slider {
+        width: 100%;
+        max-width: 100%;
+    }
 
     .slick-slide > div {
         padding: 10px;
