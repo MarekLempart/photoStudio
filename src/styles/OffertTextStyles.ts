@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 export const OffertTextContainer = styled.div`
-    width: 90%;
+    width: 95%;
     max-width: ${({ theme }) => theme.breakpoints.desktop};
     margin: 20px auto 0px;
     padding: 20px;
