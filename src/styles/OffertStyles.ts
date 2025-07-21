@@ -21,7 +21,7 @@ export const Container = styled.div`
 `;
 
 export const SliderContainer = styled.div`
-  max-width: ${({ theme }) => theme.breakpoints.mobile};
+  /* max-width: ${({ theme }) => theme.breakpoints.mobile}; */
   width: 90%;
   margin: 5px auto;
   padding: ${({ theme }) => theme.spacing.mobilePadding};
