@@ -16,7 +16,7 @@ import { FaPenNib } from "react-icons/fa";
 import { AiOutlineSolution } from "react-icons/ai";
 import { IoImagesOutline } from "react-icons/io5";
 import { GiCutDiamond } from "react-icons/gi";
-// import { useHeaderVisibility } from "../hooks/useHeaderVisibility";
+import { useHeaderVisibility } from "../hooks/useHeaderVisibility";
 import useThemeContext from "../hooks/useThemeContext";
 import {
   HeaderWrapper,
@@ -48,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
     () => parseInt(theme.breakpoints.tablet),
     [theme.breakpoints.tablet]
   );
-  // const isHeaderVisible = useHeaderVisibility();
+  const isHeaderVisible = useHeaderVisibility();
   const [isMobileOrTablet, setIsMobileOrTablet] = useState<boolean>(
     window.innerWidth < breakpointTablet
   );
@@ -106,11 +106,10 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
 
   return (
     <>
-      {/* <HeaderWrapper
-        className={`${isHeaderVisible ? "visible" : "hidden"} ${isMenuOpen ? "menu-open" : ""
-          }`}
-      > */}
-      <HeaderWrapper className={isMenuOpen ? "menu-open" : ""}>
+      <HeaderWrapper
+        className={`${isHeaderVisible ? "visible" : "hidden"} ${isMenuOpen ? "menu-open" : ""}`}
+      >
+        {/* <HeaderWrapper className={isMenuOpen ? "menu-open" : ""}> */}
         <Logo>
           <ImageComponent />
         </Logo>

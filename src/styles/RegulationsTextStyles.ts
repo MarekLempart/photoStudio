@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const RegulationsTextContainer = styled.div`
     width: 90%;
     max-width: ${({ theme }) => theme.breakpoints.desktop};
-    margin: 20px auto 0px;
+    margin: 20px auto 20px;
     padding: 20px;
     background-color: ${({ theme }) => theme.colors.bgPrimary};
     color: ${({ theme }) => theme.colors.textPrimary};

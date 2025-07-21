@@ -51,13 +51,13 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   gap: 20px;
   padding: ${({ theme }) => theme.spacing.mobilePadding};
-  margin: 0 auto;
+  margin: 0px auto 0px;
   padding-top: 20px;
 
   @media ${({ theme }) => theme.media.tabletAndDesktop} {
     padding: ${({ theme }) => theme.spacing.tabletPadding};
     gap: 40px;
-    padding-top: 20px;
+    padding-top: 30px;
   }
 `;
 
