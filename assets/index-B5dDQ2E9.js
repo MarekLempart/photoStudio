@@ -797,14 +797,19 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         border-radius: 8px;
     }
 
+    .slick-list {
+        margin: 0;
+        overflow: hidden;
+    }
+
     .slick-track {
         display: flex;
     }
 
-    & .slick-list {
+    /* & .slick-list {
         margin: 0;
         overflow: hidden;
-    }
+    } */
 
     @media (max-width: 768px) {
         width: 100%;
