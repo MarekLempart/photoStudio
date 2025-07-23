@@ -83,6 +83,7 @@ export const CategoryDescription = styled.p`
     font-size: 1rem;
     color: ${({ theme }) => theme.colors.textPrimary};
     margin-bottom: 24px;
+    border-radius: 10px;
     text-align: left;
     box-shadow: 10px 15px 20px rgba(168, 162, 138, 0.6);
 `;
