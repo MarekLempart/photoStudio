@@ -1,5 +1,6 @@
 // src/hooks/usePortfolioImages.ts
 import { useMemo } from "react";
+import { portfolioDescriptions } from "../data/portfolioDescriptions";
 
 export interface ImageData {
     id: string;
@@ -48,10 +49,15 @@ const usePortfolioImages = (): Category[] => {
             // Tworzymy kategorię, jeśli nie istnieje
             if (!categoriesMap.has(folderName)) {
                 const index = categoriesMap.size + 1;
+
+                const autoDescription = `Krótki opis dla zdjęć w folderze "${prettyFolder}" w kategorii nr ${index}.`;
+                const manualDescription = portfolioDescriptions[folderName] || "Brak dodatkowego opisu.";
+
                 categoriesMap.set(folderName, {
                     id: folderName,
                     name: `Kategoria ${index} – ${prettyFolder}`,
-                    description: `Krótki opis dla zdjęć w folderze "${prettyFolder}" w kategorii nr ${index}`,
+                    description: `${autoDescription} ${manualDescription}`,
+                    // description: `Krótki opis dla zdjęć w folderze "${prettyFolder}" w kategorii nr ${index}`,
                     images: []
                 });
             }
@@ -79,82 +85,3 @@ const usePortfolioImages = (): Category[] => {
 };
 
 export default usePortfolioImages;
-
-// // src/hooks/usePortfolioImages.ts
-// import { useMemo } from "react";
-
-// export interface ImageData {
-//     id: string;
-//     thumbnail: string;
-//     fullSize: string;
-//     alt: string;
-// }
-
-// export interface Category {
-//     id: string;
-//     name: string;
-//     description: string;
-//     images: ImageData[];
-// }
-
-// // import wszystkich .webp
-// const allModules = import.meta.glob<string>(
-//     "../img/**/*.webp",
-//     { eager: true, import: "default" }
-// );
-
-// const usePortfolioImages = (): Category[] => {
-//     return useMemo(() => {
-//         const categoriesMap = new Map<string, Category>();
-
-//         // Podziel moduły na miniaturki i pełne
-//         const entries = Object.entries(allModules);
-//         const thumbnailEntries = entries.filter(([path]) =>
-//             path.endsWith("_miniature.webp")
-//         );
-//         const fullEntries = entries.filter(
-//             ([path]) => !path.endsWith("_miniature.webp")
-//         );
-
-//         thumbnailEntries.forEach(([thumbPath, thumbnail]) => {
-//             const segments = thumbPath.split("/");
-//             const folder = segments[2];            // np. 'abstrakcje'
-//             const fileName = segments[3];          // np. '001_miniature.webp'
-//             const base = fileName.replace("_miniature.webp", ""); // '001'
-//             const prettyFolder = folder.charAt(0).toUpperCase() + folder.slice(1);
-
-//             // stwórz kategorię, jeśli nie ma
-//             if (!categoriesMap.has(folder)) {
-//                 const idx = categoriesMap.size + 1;
-//                 categoriesMap.set(folder, {
-//                     id: folder,
-//                     name: `Kategoria ${idx} – ${prettyFolder}`,
-//                     description: `Krótki opis dla zdjęć w folderze "${prettyFolder}" w kategorii nr ${idx}`,
-//                     images: [],
-//                 });
-//             }
-
-//             // znajdź odpowiadający pełen obraz przez dopasowanie ścieżki
-//             const found = fullEntries.find(([fullPath]) =>
-//                 fullPath.includes(`/${folder}/${base}.webp`)
-//             );
-//             if (!found) {
-//                 console.warn("Brak dopasowania full dla", thumbPath);
-//                 return;
-//             }
-//             const fullSize = found[1];
-
-//             const cat = categoriesMap.get(folder)!;
-//             cat.images.push({
-//                 id: `${folder}_${base}`,
-//                 thumbnail,
-//                 fullSize,
-//                 alt: `Zdjęcie z folderu "${prettyFolder}", pozycja ${cat.images.length + 1}`,
-//             });
-//         });
-
-//         return Array.from(categoriesMap.values());
-//     }, []);
-// };
-
-// export default usePortfolioImages;

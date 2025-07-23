@@ -6,7 +6,7 @@ export const HeaderWrapper = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 40px 16px;
-  height: 130px;
+  height: 110px;
   background-color: ${({ theme }) => theme.colors.bgSecondary};
   border-bottom: 5px solid ${({ theme }) => theme.colors.accent};
   box-shadow: 0px 15px 20px 5px rgba(168, 162, 138, 0.6);
@@ -37,6 +37,7 @@ export const HeaderWrapper = styled.header`
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
     border-bottom: 10px solid ${({ theme }) => theme.colors.accent};
+    height: 120px;
   }
 `;
 
@@ -48,14 +49,14 @@ export const Logo = styled.div`
 
 export const StyledImage = styled.img`
   display: block;
-  width: 70px;
-  height: 70px;
+  width: 110px;
+  height: 110px;
   background-color: transparent;
-  margin: 15px 0px 0px;
+  margin: 5px 0px 0px;
 
   @media ${({ theme }) => theme.media.tablet} {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     margin: 0px 5px 0px;
   }
 

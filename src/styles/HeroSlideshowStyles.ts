@@ -26,6 +26,7 @@ export const SlideshowContainer = styled.div`
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet})
     and (max-width: ${({ theme }) => theme.breakpoints.desktop}) {
     height: 800px;
+    margin: 20px auto 0px;
   }
 `;
 
