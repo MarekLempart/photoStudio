@@ -686,7 +686,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         svg {
             color: white;
             font-size: 20px;
-            transform: translateY(40%) translateX(45%);
+            transform: translateY(45%) translateX(50%);
         }
     }
 
