@@ -655,6 +655,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     font-size: 1rem;
     color: ${({theme:e})=>e.colors.textPrimary};
     margin-bottom: 24px;
+    border-radius: 10px;
     text-align: left;
     box-shadow: 10px 15px 20px rgba(168, 162, 138, 0.6);
 `,Pne=ue.div`
