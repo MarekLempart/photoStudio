@@ -45,23 +45,28 @@ const PortfolioGallery: React.FC = () => {
     const sliderSettings = {
         dots: false,
         infinite: true,
-        speed: 500,
         slidesToShow: 6,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
         arrows: true, // Włączamy strzałki
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
+        accessibility: true,
+        swipeToSlide: true,
         responsive: [
             {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 4,
+                    slidesToScroll: 2,
                 },
             },
             {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 1,
                 },
             },
         ],
