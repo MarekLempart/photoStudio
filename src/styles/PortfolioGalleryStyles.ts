@@ -84,6 +84,7 @@ export const CategoryDescription = styled.p`
     color: ${({ theme }) => theme.colors.textPrimary};
     margin-bottom: 24px;
     text-align: left;
+    box-shadow: 10px 15px 20px rgba(168, 162, 138, 0.6);
 `;
 
 export const SliderWrapper = styled.div`
@@ -105,6 +106,8 @@ export const SliderWrapper = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
+        top: 50%;
+        transform: translateY(-50%);
 
         &:before {
             content: '';
@@ -113,15 +116,16 @@ export const SliderWrapper = styled.div`
         svg {
             color: white;
             font-size: 20px;
+            transform: translateY(40%) translateX(45%);
         }
     }
 
     .slick-prev {
-        left: -50px;
+        left: 15px;
     }
 
     .slick-next {
-        right: -50px;
+        right: 15px;
     }
 `;
 
