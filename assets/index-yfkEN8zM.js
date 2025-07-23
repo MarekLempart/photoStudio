@@ -656,6 +656,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     color: ${({theme:e})=>e.colors.textPrimary};
     margin-bottom: 24px;
     text-align: left;
+    box-shadow: 10px 15px 20px rgba(168, 162, 138, 0.6);
 `,Pne=ue.div`
     width: 100%;
     overflow: hidden;
@@ -675,6 +676,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         display: flex;
         align-items: center;
         justify-content: center;
+        top: 50%;
+        transform: translateY(-50%);
 
         &:before {
             content: '';
@@ -683,15 +686,16 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         svg {
             color: white;
             font-size: 20px;
+            transform: translateY(40%) translateX(45%);
         }
     }
 
     .slick-prev {
-        left: -50px;
+        left: 15px;
     }
 
     .slick-next {
-        right: -50px;
+        right: 15px;
     }
 `,Tne=ue.img`
     width: 100%;
