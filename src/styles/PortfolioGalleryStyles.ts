@@ -116,7 +116,7 @@ export const SliderWrapper = styled.div`
         svg {
             color: white;
             font-size: 20px;
-            transform: translateY(40%) translateX(45%);
+            transform: translateY(45%) translateX(50%);
         }
     }
 
