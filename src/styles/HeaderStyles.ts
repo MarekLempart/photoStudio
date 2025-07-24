@@ -200,7 +200,7 @@ export const SocialMediaWrapper = styled.div`
   margin-top: auto;
 
   a {
-    color: ${({ theme }) => theme.colors.textPrimary};
+    color: ${({ theme }) => theme.colors.textSecondary};
     font-size: 24px;
     transition: color 250ms ease-in-out;
 

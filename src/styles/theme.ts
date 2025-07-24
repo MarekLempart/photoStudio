@@ -200,9 +200,9 @@ export const lightTheme = {
   colors: {
     ...theme.colors,
     bgPrimary: theme.colors.colMilkPunch,
-    bgSecondary: theme.colors.colBisque,
+    bgSecondary: theme.colors.colSienna,
     textPrimary: theme.colors.colPickledBluewood,
-    textSecondary: theme.colors.colPickledBluewood,
+    textSecondary: theme.colors.colMilkPunch,
     accent: theme.colors.colGrannySmith,
     hover: theme.colors.colGrannySmith,
     hoverButton: theme.colors.colAvocado,

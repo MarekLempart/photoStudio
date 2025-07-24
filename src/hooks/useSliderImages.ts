@@ -27,6 +27,36 @@ const folderImports = {
             { eager: true, import: 'default' }
         ),
     },
+    'wizerunkowe twój biznes': {
+        thumbnails: import.meta.glob<string>(
+            '../img/wizerunkowe twój biznes/*_miniature.webp',
+            { eager: true, import: 'default' }
+        ),
+        fulls: import.meta.glob<string>(
+            '../img/wizerunkowe twój biznes/*.webp',
+            { eager: true, import: 'default' }
+        ),
+    },
+    'dzieci': {
+        thumbnails: import.meta.glob<string>(
+            '../img/dzieci/*_miniature.webp',
+            { eager: true, import: 'default' }
+        ),
+        fulls: import.meta.glob<string>(
+            '../img/dzieci/*.webp',
+            { eager: true, import: 'default' }
+        ),
+    },
+    'stylizowane kobiece': {
+        thumbnails: import.meta.glob<string>(
+            '../img/stylizowane kobiece/*_miniature.webp',
+            { eager: true, import: 'default' }
+        ),
+        fulls: import.meta.glob<string>(
+            '../img/stylizowane kobiece/*.webp',
+            { eager: true, import: 'default' }
+        ),
+    },
 } as const;
 
 export type FolderKey = keyof typeof folderImports;
