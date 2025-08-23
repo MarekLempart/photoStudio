@@ -9,20 +9,6 @@ export const useHeaderVisibility = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // const currentScrollY = window.scrollY;
-
-      // if (currentScrollY <= SCROLL_DELTA) {
-      //   setIsVisible(true);
-      //   lastScrollY.current = currentScrollY;
-      //   return;
-      // }
-
-      // if (Math.abs(currentScrollY - lastScrollY.current) < SCROLL_DELTA) {
-      //   return;
-      // }
-      // const isScrollingDown = currentScrollY > lastScrollY.current;
-      // setIsVisible(!isScrollingDown);
-      // lastScrollY.current = currentScrollY;
       const currentScrollY = window.scrollY;
 
       if (Math.abs(currentScrollY - lastScrollY.current) < SCROLL_DELTA) {

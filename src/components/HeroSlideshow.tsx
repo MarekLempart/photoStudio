@@ -80,7 +80,7 @@ const HeroSlideshow = () => {
             sequence={[
               "Nazywam się Marta i jestem fotografem,",
               1000,
-              "zapraszam do zapoznania się z moją twórczością...",
+              "zapraszam do współpracy...",
               3000,
             ]}
             speed={50}

@@ -14,17 +14,6 @@ export const MainWrapper = styled.div`
   position: relative;
 `;
 
-// export const MainWrapper = styled.main`
-//   width: 100%;
-//   padding-top: ${({ theme }) => theme.headerHeight};
-//   flex-grow: 1;
-
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   position: relative;
-// `;
-
 export const Spiner = styled(Spin)`
   position: absolute;
   top: 50%;

@@ -7,33 +7,33 @@ export interface ImagePair {
 }
 
 const folderImports = {
-    'wizerunkowe biznesowe': {
+    'twój wizerunek': {
         thumbnails: import.meta.glob<string>(
-            '../img/wizerunkowe biznesowe/*_miniature.webp',
+            '../img/twój wizerunek/*_miniature.webp',
             { eager: true, import: 'default' }
         ),
         fulls: import.meta.glob<string>(
-            '../img/wizerunkowe biznesowe/*.webp',
+            '../img/twój wizerunek/*.webp',
             { eager: true, import: 'default' }
         ),
     },
-    'oferta biznesowa': {
+    'twój biznes': {
         thumbnails: import.meta.glob<string>(
-            '../img/oferta biznesowa/*_miniature.webp',
+            '../img/twój biznes/*_miniature.webp',
             { eager: true, import: 'default' }
         ),
         fulls: import.meta.glob<string>(
-            '../img/oferta biznesowa/*.webp',
+            '../img/twój biznes/*.webp',
             { eager: true, import: 'default' }
         ),
     },
-    'wizerunkowe twój biznes': {
+    'produktowe': {
         thumbnails: import.meta.glob<string>(
-            '../img/wizerunkowe twój biznes/*_miniature.webp',
+            '../img/produktowe/*_miniature.webp',
             { eager: true, import: 'default' }
         ),
         fulls: import.meta.glob<string>(
-            '../img/wizerunkowe twój biznes/*.webp',
+            '../img/produktowe/*.webp',
             { eager: true, import: 'default' }
         ),
     },

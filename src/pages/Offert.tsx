@@ -14,15 +14,15 @@ const Offert = () => {
     <Container>
       <OffertText data={offertTextData01} />
       <SliderContainer>
-        <ImageSlider folder="wizerunkowe biznesowe" />
+        <ImageSlider folder="twój wizerunek" />
       </SliderContainer>
       <OffertText data={offertTextData02} />
       <SliderContainer>
-        <ImageSlider folder="oferta biznesowa" />
+        <ImageSlider folder="twój biznes" />
       </SliderContainer>
       <OffertText data={offertTextData03} />
       <SliderContainer>
-        <ImageSlider folder="wizerunkowe twój biznes" />
+        <ImageSlider folder="produktowe" />
       </SliderContainer>
       <OffertText data={offertTextData04} />
       <SliderContainer>

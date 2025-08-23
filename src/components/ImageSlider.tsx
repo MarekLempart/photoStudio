@@ -7,14 +7,10 @@ import useSliderImages, { ImagePair, FolderKey } from '../hooks/useSliderImages'
 import { SliderWrapper } from '../styles/ImageSliderStyles';
 
 interface ImageSliderProps {
-    // folder: string;
     folder: FolderKey;
-    // folder: 'wizerunkowe biznesowe' | 'oferta biznesowa';
 }
 
 const ImageSlider: React.FC<ImageSliderProps> = ({ folder }) => {
-    // const thumbnails = useSliderImages(folder);
-    // const getFullSize = (thumb: string) => thumb.replace('_miniature', '');
     const images: ImagePair[] = useSliderImages(folder);
 
     const settings = {
