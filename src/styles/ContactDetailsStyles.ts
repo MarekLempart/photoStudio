@@ -5,7 +5,7 @@ export const DetailsContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
+  padding: 10px;
 
   @media ${({ theme }) => theme.media.tabletAndDesktop} {
     flex: 1;
@@ -30,13 +30,14 @@ export const DetailItem = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-left: 30px;
 
   @media ${({ theme }) => theme.media.tablet} {
     margin-left: 60px;
   }
 
   @media ${({ theme }) => theme.media.desktop} {
-    margin-left: 150px;
+    margin-left: 60px;
   }
 `;
 

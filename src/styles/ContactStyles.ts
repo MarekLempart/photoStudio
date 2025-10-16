@@ -53,6 +53,7 @@ export const ContactContainer = styled.div`
   padding: ${({ theme }) => theme.spacing.mobilePadding};
   margin: 0px auto 0px;
   padding-top: 20px;
+  width: 100%;
 
   @media ${({ theme }) => theme.media.tabletAndDesktop} {
     padding: ${({ theme }) => theme.spacing.tabletPadding};

@@ -78,7 +78,7 @@ export const InputContainer = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  max-width: 100%;
+  width: 100%;
   position: relative;
   padding: 0px 20px;
 
