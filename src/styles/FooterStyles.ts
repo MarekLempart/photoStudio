@@ -80,6 +80,6 @@ export const FooterText = styled.p`
   color: ${({ theme }) => theme.colors.textPrimary};
 
   @media ${({ theme }) => theme.media.tabletAndDesktop} {
-    font-size: 12px;
+    font-size: 10px;
   }
 `;

@@ -29,6 +29,7 @@ export const SectionTitle = styled.h2`
 export const DetailItem = styled.div`
   display: flex;
   align-items: center;
+  /* justify-content: center; */
   gap: 10px;
   margin-left: 30px;
 
@@ -38,6 +39,7 @@ export const DetailItem = styled.div`
 
   @media ${({ theme }) => theme.media.desktop} {
     margin-left: 60px;
+    width: auto;
   }
 `;
 
