@@ -405,6 +405,7 @@ Error generating stack: `+a.message+`
 `,yd=ue.div`
   display: flex;
   align-items: center;
+  /* justify-content: center; */
   gap: 10px;
   margin-left: 30px;
 
@@ -414,6 +415,7 @@ Error generating stack: `+a.message+`
 
   @media ${({theme:e})=>e.media.desktop} {
     margin-left: 60px;
+    width: auto;
   }
 `,_d=ue.div`
   font-size: 20px;
@@ -1228,7 +1230,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   color: ${({theme:e})=>e.colors.textPrimary};
 
   @media ${({theme:e})=>e.media.tabletAndDesktop} {
-    font-size: 12px;
+    font-size: 10px;
   }
 `;function Mie(e){return Xt({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"path",attr:{d:"M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"},child:[]}]})(e)}const Nie=()=>O.jsxs(zie,{children:[O.jsxs(Rie,{children:[O.jsx(F0,{children:"Photographer:"}),O.jsx(F0,{children:"Marta Matczuk-Pisarek"}),O.jsx(F0,{children:O.jsxs("a",{href:"tel:+48603758565",children:[O.jsx(Mie,{})," +48 603 758 565"]})})]}),O.jsx(Aie,{children:"© 2024 Template Vite - React/TS"})]});function dl(){return dl=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)({}).hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},dl.apply(null,arguments)}function et(e){"@babel/helpers - typeof";return et=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},et(e)}var Iie=Symbol.for("react.element"),Fie=Symbol.for("react.transitional.element"),Bie=Symbol.for("react.fragment");function Uie(e){return e&&et(e)==="object"&&(e.$$typeof===Iie||e.$$typeof===Fie)&&e.type===Bie}var K_={},Vie=function(t){};function Hie(e,t){}function Wie(e,t){}function Gie(){K_={}}function $T(e,t,n){!t&&!K_[n]&&(e(!1,n),K_[n]=!0)}function Oc(e,t){$T(Hie,e,t)}function Zie(e,t){$T(Wie,e,t)}Oc.preMessage=Vie;Oc.resetWarned=Gie;Oc.noteOnce=Zie;function Kie(e,t){if(et(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(et(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}function xT(e){var t=Kie(e,"string");return et(t)=="symbol"?t:t+""}function ge(e,t,n){return(t=xT(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function M$(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(i){return Object.getOwnPropertyDescriptor(e,i).enumerable})),n.push.apply(n,r)}return n}function me(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]!=null?arguments[t]:{};t%2?M$(Object(n),!0).forEach(function(r){ge(e,r,n[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):M$(Object(n)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(n,r))})}return e}function N$(e){return e instanceof HTMLElement||e instanceof SVGElement}function Xie(e){return e&&et(e)==="object"&&N$(e.nativeElement)?e.nativeElement:N$(e)?e:null}function Yie(e){var t=Xie(e);if(t)return t;if(e instanceof V.Component){var n;return(n=A3.findDOMNode)===null||n===void 0?void 0:n.call(A3,e)}return null}var kT={exports:{}},Ye={};/**
  * @license React
