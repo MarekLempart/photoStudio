@@ -1,0 +1,87 @@
+{
+    "nav": {
+        "home": "Home",
+        "portfolio": "Portfolio",
+        "offer": "Offer",
+        "regulations": "Regulations",
+        "contact": "Contact",
+        "about": "About me"
+    },
+    "hero": {
+        "line1": "My name is Marta and I am a photographer,",
+        "line2": "I invite you to cooperate..."
+    },
+    "contactDetails": {
+        "title": "Contact Details",
+        "location": "Wrocław, Poland"
+    },
+    "contactForm": {
+        "title": "Contact",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phone": "Phone Number",
+        "message": "Message",
+        "submit": "Send",
+        "validation": {
+            "firstNameRequired": "First name is required",
+            "lastNameRequired": "Last name is required",
+            "emailInvalid": "Invalid email address",
+            "emailRequired": "Email is required",
+            "phoneRequired": "Phone number is required",
+            "messageRequired": "Message is required"
+        },
+        "toast": {
+            "success": "Message sent successfully!",
+            "error": "An error occurred. Please try again."
+        }
+    },
+    "footer": {
+        "photographer": "Photographer:",
+        "copyright": "© 2024 Template Vite - React/TS"
+    },
+    "portfolio": {
+        "categoryTitle": "Category {{index}} – {{name}}",
+        "imageAlt": "Image from the \"{{folderName}}\" folder, position {{index}}",
+        "categoryNames": {
+            "abstrakcje": "Abstract",
+            "dzieci": "Children",
+            "florystyczne": "Floral",
+            "kobiece": "Feminine",
+            "krajobraz": "Landscape",
+            "produktowe": "Product",
+            "psie": "Dogs",
+            "rodzinne": "Family",
+            "stylizacje kulinarne": "Culinary Styling",
+            "stylizowane alternatywne": "Alternative Styled",
+            "stylizowane dzieci": "Styled Children",
+            "stylizowane grupowe": "Styled Group",
+            "stylizowane kobiece": "Styled Feminine",
+            "świąteczne stylizacje": "Christmas Styling",
+            "twój wizerunek": "Your Image",
+            "twój biznes": "Your Business",
+            "wnętrza stylizacje": "Interior - Styling",
+            "wnętrza nieruchomości": "Interior - Real Estate"
+        },
+        "descriptions": {
+            "abstrakcje": "Artistic shots of form, color, and light that escape traditional photography frames, stimulating the imagination.",
+            "dzieci": "Natural and joyful frames that capture the fleeting, authentic moments and energy of childhood.",
+            "florystyczne": "Subtle and detailed floral compositions, showcasing the extraordinary beauty and delicacy of nature.",
+            "kobiece": "Feminine sessions that sensually and elegantly emphasize the strength, beauty, and individuality of each woman.",
+            "krajobraz": "Breathtaking views and landscapes that transport you to the most beautiful corners of the world.",
+            "produktowe": "Professional product photos on a white background and in arrangements that effectively support sales and distinguish the offer.",
+            "psie": "Portraits of four-legged friends full of energy and character, captured in their natural environment during play and relaxation.",
+            "rodzinne": "Warm and authentic family sessions that tell your unique story.",
+            "stylizacje kulinarne": "Appetizing and aesthetic food arrangements that stimulate the senses, delighting with detail and composition.",
+            "stylizowane alternatywne": "Unique, artistic sessions with a distinctive atmosphere, for those seeking unconventional and bold shots.",
+            "stylizowane dzieci": "Magical, themed sessions for children that transport them into a fairytale world of imagination and unforgettable adventure.",
+            "stylizowane grupowe": "Creative and themed group photos for teams, friends, or companies, full of shared energy and dynamism.",
+            "stylizowane kobiece": "Artistic feminine sessions with unique styling and makeup, creating frames straight out of a movie.",
+            "świąteczne stylizacje": "Sessions in a magical, festive atmosphere, perfect for a family keepsake, full of warmth and joyful ambiance.",
+            "twój wizerunek": "Modern business portraits and image sessions that build a professional image of an expert in their field.",
+            "twój biznes": "Photography that tells the story of your company, showing its authenticity, team, and unique workplace. Comprehensive photography for companies, professionally presenting services, products, and the character of your business. Personal branding sessions that help build a coherent and strong personal image in media and the internet.",
+            "wnętrza stylizacje": "Interior photos that capture their unique atmosphere, thoughtful design, and attention to the smallest details.",
+            "wnętrza nieruchomości": "Bright and spacious photos of real estate for sale or rent, which effectively attract the attention of potential clients."
+        }
+    }
+}

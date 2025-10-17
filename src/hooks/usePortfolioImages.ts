@@ -1,6 +1,6 @@
 // src/hooks/usePortfolioImages.ts
 import { useMemo } from "react";
-import { portfolioDescriptions } from "../data/portfolioDescriptions";
+import { useTranslation } from "react-i18next";
 
 export interface ImageData {
     id: string;
@@ -26,6 +26,8 @@ const allModules = import.meta.glob<string>(
  * Hook generujący kategorie z obrazami (miniatury i pełne).
  */
 const usePortfolioImages = (): Category[] => {
+    const { t } = useTranslation();
+
     return useMemo(() => {
         const categoriesMap = new Map<string, Category>();
 
@@ -44,20 +46,22 @@ const usePortfolioImages = (): Category[] => {
             const folderName = segments[2]; // 'kategoria1'
             const fileName = segments[3]; // '001_miniature.webp'
             const baseName = fileName.replace(/_miniature\.webp$/, ""); // '001'
-            const prettyFolder = folderName.charAt(0).toUpperCase() + folderName.slice(1);
 
             // Tworzymy kategorię, jeśli nie istnieje
             if (!categoriesMap.has(folderName)) {
                 const index = categoriesMap.size + 1;
 
-                const autoDescription = `Krótki opis dla zdjęć w folderze "${prettyFolder}" w kategorii nr ${index}.`;
-                const manualDescription = portfolioDescriptions[folderName] || "Brak dodatkowego opisu.";
+                // Używamy klucza z pliku JSON, a jako fallback - nazwę folderu
+                const translatedName = t(`portfolio.categoryNames.${folderName}`, { defaultValue: folderName });
+                // Tworzymy tytuł kategorii
+                const categoryName = t('portfolio.categoryTitle', { index, name: translatedName });
+                // Pobieramy opis z pliku JSON
+                const description = t(`portfolio.descriptions.${folderName}`, { defaultValue: "Brak opisu." });
 
                 categoriesMap.set(folderName, {
                     id: folderName,
-                    name: `Kategoria ${index} – ${prettyFolder}`,
-                    description: `${autoDescription} ${manualDescription}`,
-                    // description: `Krótki opis dla zdjęć w folderze "${prettyFolder}" w kategorii nr ${index}`,
+                    name: categoryName,
+                    description: description,
                     images: []
                 });
             }
@@ -75,13 +79,19 @@ const usePortfolioImages = (): Category[] => {
                 id: `${folderName}_${baseName}`,
                 thumbnail,
                 fullSize,
-                alt: `Zdjęcie z folderu "${prettyFolder}", pozycja ${category.images.length + 1}`
+                alt: t('portfolio.imageAlt',
+                    {
+                        folderName:
+                            t(`portfolio.categoryNames.${folderName}`,
+                                { defaultValue: folderName }),
+                        index: category.images.length + 1
+                    })
             };
             category.images.push(imageData);
         });
 
         return Array.from(categoriesMap.values());
-    }, []);
+    }, [t]);
 };
 
 export default usePortfolioImages;

@@ -9,15 +9,17 @@ import {
   SectionTitle,
 } from "../styles/ContactDetailsStyles";
 import Map from "./Map";
+import { useTranslation } from "react-i18next";
 
 const ContactDetails: React.FC = () => {
+  const { t } = useTranslation();
   const [showMap, setShowMap] = useState(false);
 
   const toggleMap = () => setShowMap(!showMap);
 
   return (
     <DetailsContainer>
-      <SectionTitle>Dane kontaktowe</SectionTitle>
+      <SectionTitle>{t('contactDetails.title')}</SectionTitle>
       <DetailItem>
         <DetailIcon>
           <FaUser />
@@ -29,7 +31,8 @@ const ContactDetails: React.FC = () => {
           <FaMapMarkerAlt />
         </DetailIcon>
         <DetailText>
-          <button onClick={toggleMap}>Wrocław, Polska</button>
+          {/* <button onClick={toggleMap}>Wrocław, Polska</button> */}
+          <button onClick={toggleMap}>{t('contactDetails.location')}</button>
         </DetailText>
       </DetailItem>
       <DetailItem>
@@ -53,7 +56,7 @@ const ContactDetails: React.FC = () => {
         <Map
           latitude={51.11075}
           longitude={17.03129}
-          address="Wrocław, Polska"
+          address={t('contactDetails.location')}
           onClose={toggleMap}
         />
       )}

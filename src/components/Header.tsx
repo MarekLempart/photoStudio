@@ -2,6 +2,8 @@
 import React, { useState, useEffect, useRef, useMemo } from "react";
 import { NavLink } from "react-router-dom";
 import { useTheme } from "styled-components";
+import { useTranslation } from "react-i18next";
+import useAppContext from "../hooks/useAppContext";
 import {
   FaBars,
   FaTimes,
@@ -17,7 +19,6 @@ import { AiOutlineSolution } from "react-icons/ai";
 import { IoImagesOutline } from "react-icons/io5";
 import { GiCutDiamond } from "react-icons/gi";
 import { useHeaderVisibility } from "../hooks/useHeaderVisibility";
-import useThemeContext from "../hooks/useThemeContext";
 import {
   HeaderWrapper,
   Logo,
@@ -29,12 +30,39 @@ import {
   MobileNavLink,
   SocialMediaWrapper,
   Overlay,
+  TogglesWrapper,
   ThemeToggleButtonWrapper,
   ThemeToggleSlider,
   ThemeToggleButton,
+  LanguageToggleSlider,
+  LanguageToggleButton,
   MobileIconsContainer,
 } from "../styles/HeaderStyles";
 import LogoMMphotoImage from "../img/Marta MP.png";
+
+const PlFlagIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 5">
+    <rect width="8" height="5" fill="#fff" />
+    <rect width="8" height="2.5" y="2.5" fill="#dc143c" />
+  </svg>
+);
+
+const GbFlagIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30">
+    <clipPath id="s">
+      <path d="M0,0 v30 h60 v-30 z" />
+    </clipPath>
+    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6" />
+    <path
+      d="M0,0 L60,30 M60,0 L0,30"
+      clipPath="url(#s)"
+      stroke="#c8102e"
+      strokeWidth="4"
+    />
+    <path d="M30,0 v30 M0,15 h60" stroke="#fff" strokeWidth="10" />
+    <path d="M30,0 v30 M0,15 h60" stroke="#c8102e" strokeWidth="6" />
+  </svg>
+);
 
 interface HeaderProps {
   isMenuOpen: boolean;
@@ -43,7 +71,10 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
   const theme = useTheme();
-  const { theme: currentTheme, toggleTheme } = useThemeContext();
+  const { t } = useTranslation();
+  const { theme: currentTheme, toggleTheme, language, changeLanguage } = useAppContext();
+  const isDarkMode = currentTheme === "dark";
+
   const breakpointTablet = useMemo(
     () => parseInt(theme.breakpoints.tablet),
     [theme.breakpoints.tablet]
@@ -116,27 +147,22 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
 
         <Nav>
           <StyledNavLink as={NavLink} to="/" onClick={handleMenuClick}>
-            <FaHome /> Home
+            <FaHome /> {t('nav.home')}
           </StyledNavLink>
-
           <StyledNavLink as={NavLink} to="/portfolio" onClick={handleMenuClick}>
-            <IoImagesOutline /> Portfolio
+            <IoImagesOutline /> {t('nav.portfolio')}
           </StyledNavLink>
-
           <StyledNavLink as={NavLink} to="/offer" onClick={handleMenuClick}>
-            <GiCutDiamond /> Oferta
+            <GiCutDiamond /> {t('nav.offer')}
           </StyledNavLink>
-
           <StyledNavLink as={NavLink} to="/regulations" onClick={handleMenuClick}>
-            <AiOutlineSolution /> Regulamin
+            <AiOutlineSolution /> {t('nav.regulations')}
           </StyledNavLink>
-
           <StyledNavLink as={NavLink} to="/contact" onClick={handleMenuClick}>
-            <MdContactPhone /> Kontakt
+            <MdContactPhone /> {t('nav.contact')}
           </StyledNavLink>
-
           <StyledNavLink as={NavLink} to="/about" onClick={handleMenuClick}>
-            <FaPenNib /> O mnie
+            <FaPenNib /> {t('nav.about')}
           </StyledNavLink>
 
           <SocialMediaWrapper>
@@ -157,22 +183,39 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
               <FaFacebook />
             </a>
           </SocialMediaWrapper>
-          <ThemeToggleButtonWrapper>
-            <ThemeToggleSlider onClick={toggleTheme} $active={currentTheme === "dark"}>
-              <ThemeToggleButton $active={currentTheme === "dark"}>
-                {currentTheme === "dark" ? <FaCloudMoon /> : <FaCloudSun />}
+
+          <TogglesWrapper>
+            <ThemeToggleSlider
+              onClick={toggleTheme}
+              $active={isDarkMode}
+            >
+              <ThemeToggleButton $active={isDarkMode}>
+                {isDarkMode ? <FaCloudMoon /> : <FaCloudSun />}
               </ThemeToggleButton>
             </ThemeToggleSlider>
-          </ThemeToggleButtonWrapper>
+
+            <LanguageToggleSlider
+              onClick={() => changeLanguage(language === "pl" ? "en" : "pl")}
+              $isDarkMode={isDarkMode}
+            >
+
+              <LanguageToggleButton $active={language === "en"}>
+                {language === "en" ? <GbFlagIcon /> : <PlFlagIcon />}
+              </LanguageToggleButton>
+            </LanguageToggleSlider>
+          </TogglesWrapper>
         </Nav>
 
         {/* Kontener dla mobilnych ikon */}
         {isMobileOrTablet && (
           <MobileIconsContainer>
             <ThemeToggleButtonWrapper>
-              <ThemeToggleSlider onClick={toggleTheme} $active={currentTheme === "dark"}>
-                <ThemeToggleButton $active={currentTheme === "dark"}>
-                  {currentTheme === "dark" ? <FaCloudMoon /> : <FaCloudSun />}
+              <ThemeToggleSlider
+                onClick={toggleTheme}
+                $active={isDarkMode}
+              >
+                <ThemeToggleButton $active={isDarkMode}>
+                  {isDarkMode ? <FaCloudMoon /> : <FaCloudSun />}
                 </ThemeToggleButton>
               </ThemeToggleSlider>
             </ThemeToggleButtonWrapper>
@@ -192,28 +235,51 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
             </button>
 
             <MobileNavLink as={NavLink} to="/" onClick={handleMenuClick}>
-              <FaHome /> Home
+              <FaHome /> {t('nav.home')}
             </MobileNavLink>
-
             <MobileNavLink as={NavLink} to="/portfolio" onClick={handleMenuClick}>
-              <IoImagesOutline /> Portfolio
+              <IoImagesOutline /> {t('nav.portfolio')}
             </MobileNavLink>
-
             <MobileNavLink as={NavLink} to="/offer" onClick={handleMenuClick}>
-              <GiCutDiamond /> Oferta
+              <GiCutDiamond /> {t('nav.offer')}
             </MobileNavLink>
-
             <MobileNavLink as={NavLink} to="/regulations" onClick={handleMenuClick}>
-              <AiOutlineSolution /> Regulamin
+              <AiOutlineSolution /> {t('nav.regulations')}
             </MobileNavLink>
-
             <MobileNavLink as={NavLink} to="/contact" onClick={handleMenuClick}>
-              <MdContactPhone /> Kontakt
+              <MdContactPhone /> {t('nav.contact')}
+            </MobileNavLink>
+            <MobileNavLink as={NavLink} to="/about" onClick={handleMenuClick}>
+              <FaPenNib /> {t('nav.about')}
             </MobileNavLink>
 
-            <MobileNavLink as={NavLink} to="/about" onClick={handleMenuClick}>
-              <FaPenNib /> O mnie
-            </MobileNavLink>
+            <TogglesWrapper
+              style={{
+                marginTop: "auto",
+                marginBottom: "20px",
+                alignItems: "flex-start",
+                marginLeft: "15px",
+              }}
+            >
+              <ThemeToggleSlider
+                onClick={toggleTheme}
+                $active={isDarkMode}
+              >
+                <ThemeToggleButton $active={isDarkMode}>
+                  {isDarkMode ? <FaCloudMoon /> : <FaCloudSun />}
+                </ThemeToggleButton>
+              </ThemeToggleSlider>
+
+              <LanguageToggleSlider
+                onClick={() => changeLanguage(language === "pl" ? "en" : "pl")}
+                $isDarkMode={isDarkMode}
+              >
+
+                <LanguageToggleButton $active={language === "en"}>
+                  {language === "en" ? <GbFlagIcon /> : <PlFlagIcon />}
+                </LanguageToggleButton>
+              </LanguageToggleSlider>
+            </TogglesWrapper>
 
             <SocialMediaWrapper>
               <a

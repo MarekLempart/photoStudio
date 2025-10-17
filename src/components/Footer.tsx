@@ -8,14 +8,17 @@ import {
   ContactLine,
 } from "../styles/FooterStyles";
 import { FiPhoneCall } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <FooterContainer>
 
       {/* Sekcja fotografa */}
       <ContactSection>
-        <ContactLine>Photographer:</ContactLine>
+        <ContactLine>{t('footer.photographer')}</ContactLine>
         <ContactLine>Marta Matczuk-Pisarek</ContactLine>
         <ContactLine>
           <a href="tel:+48603758565">
@@ -30,7 +33,7 @@ const Footer = () => {
             </PhotographerLogo> */}
 
       {/* Informacje na dole */}
-      <FooterText>&copy; 2024 Template Vite - React/TS</FooterText>
+      <FooterText>&copy; {t('footer.copyright')}</FooterText>
     </FooterContainer>
   );
 };

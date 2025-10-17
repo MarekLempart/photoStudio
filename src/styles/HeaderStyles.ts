@@ -215,6 +215,13 @@ export const SocialMediaWrapper = styled.div`
   }
 `;
 
+export const TogglesWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+`;
+
 export const ThemeToggleButtonWrapper = styled.div`
   position: relative;
   display: flex;
@@ -224,45 +231,76 @@ export const ThemeToggleButtonWrapper = styled.div`
 
 export const ThemeToggleSlider = styled.div<{ $active: boolean }>`
   position: relative;
-  width: 55px;
-  height: 30px;
-  border-radius: 20px;
+  width: 45px;
+  height: 20px;
+  border-radius: 10px;
+  padding: 1px;
   background-color: ${({ $active, theme }) =>
-    $active ? theme.colors.colTeak : theme.colors.colGrannySmith};
+    $active ? theme.colors.colGrannySmith : theme.colors.colTan};
   transition: background-color 0.6s ease;
-  display: flex;
-  justify-content: ${({ $active }) => ($active ? "flex-end" : "flex-start")};
-  align-items: center;
-  padding: 2px;
   cursor: pointer;
 `;
 
 export const ThemeToggleButton = styled.button<{ $active: boolean }>`
-  width: 30px;
-  height: 30px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background-color: ${({ theme }) => theme.colors.bgPrimary};
-  /* border: none; */
-  border: solid 2px
-    ${({ $active, theme }) =>
-    $active ? theme.colors.hover : theme.colors.distinction};
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: ${({ $active }) =>
-    $active ? "translateX(10px)" : "translateX(-10px)"};
   cursor: pointer;
-  transition: transform 0.6s ease, border-color 0.6s ease;
+  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
-  &:hover {
-    transform: scale(1.1);
-    border-color: ${({ theme }) => theme.colors.hoverButton};
-  }
+  transform: ${({ $active }) =>
+    $active ? "translateX(25px)" : "translateX(0px)"};
 
   svg {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     fill: ${({ theme }) => theme.colors.textPrimary};
+  }
+`;
+
+export const LanguageToggleSlider = styled.div<{ $isDarkMode: boolean }>`
+  position: relative;
+  width: 45px;
+  height: 20px;
+  border-radius: 10px;
+  padding: 1px;
+  background-color: ${({ $isDarkMode, theme }) =>
+    $isDarkMode ? theme.colors.colGrannySmith : theme.colors.colTan};
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+`;
+
+export const LanguageToggleButton = styled.button<{ $active: boolean }>`
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: ${({ theme }) => theme.colors.bgPrimary};
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transform: ${({ $active }) =>
+    $active ? "translateX(25px)" : "translateX(0px)"};
+
+  svg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
   }
 `;
 

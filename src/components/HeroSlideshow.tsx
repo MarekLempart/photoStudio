@@ -9,8 +9,10 @@ import {
   DarkOverlay,
 } from "../styles/HeroSlideshowStyles";
 import { TypeAnimation } from "react-type-animation";
+import { useTranslation } from "react-i18next";
 
 const HeroSlideshow = () => {
+  const { t } = useTranslation();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [screenSize, setScreenSize] = useState("desktop");
@@ -78,9 +80,9 @@ const HeroSlideshow = () => {
         >
           <TypeAnimation
             sequence={[
-              "Nazywam się Marta i jestem fotografem,",
+              t('hero.line1'),
               1000,
-              "zapraszam do współpracy...",
+              t('hero.line2'),
               3000,
             ]}
             speed={50}

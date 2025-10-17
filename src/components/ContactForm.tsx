@@ -17,10 +17,12 @@ import {
   ErrorText,
   PhoneInputStyledContainer,
 } from "../styles/ContactFormStyles";
+import { useTranslation } from "react-i18next";
 
 emailjs.init("xtkeKbpRdN9dos4sU");
 
 const ContactForm: React.FC = () => {
+  const { t } = useTranslation();
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -30,13 +32,13 @@ const ContactForm: React.FC = () => {
       message: "",
     },
     validationSchema: Yup.object({
-      firstName: Yup.string().required("Imię jest wymagane"),
-      lastName: Yup.string().required("Nazwisko jest wymagane"),
+      firstName: Yup.string().required(t('contactForm.validation.firstNameRequired')),
+      lastName: Yup.string().required(t('contactForm.validation.lastNameRequired')),
       email: Yup.string()
-        .email("Nieprawidłowy email")
-        .required("Email jest wymagany"),
-      phone: Yup.string().required("Numer jest wymagany"),
-      message: Yup.string().required("Treść zapytania jest wymagana"),
+        .email(t('contactForm.validation.emailInvalid'))
+        .required(t('contactForm.validation.emailRequired')),
+      phone: Yup.string().required(t('contactForm.validation.phoneRequired')),
+      message: Yup.string().required(t('contactForm.validation.messageRequired')),
     }),
     onSubmit: (values, { resetForm }) => {
       emailjs
@@ -47,7 +49,7 @@ const ContactForm: React.FC = () => {
           "xtkeKbpRdN9dos4sU"
         )
         .then(() => {
-          toast.success("Wiadomość wysłana!", {
+          toast.success(t('contactForm.toast.success'), {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -60,7 +62,7 @@ const ContactForm: React.FC = () => {
           resetForm();
         })
         .catch(() =>
-          toast.error("Wystąpił błąd. Spróbuj ponownie.", {
+          toast.error(t('contactForm.toast.error'), {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -76,11 +78,11 @@ const ContactForm: React.FC = () => {
 
   return (
     <FormContainer onSubmit={formik.handleSubmit}>
-      <SectionTitle>Kontakt</SectionTitle>
+      <SectionTitle>{t('contactForm.title')}</SectionTitle>
       <InputContainer>
         <Input
           name="firstName"
-          placeholder="Imię"
+          placeholder={t('contactForm.firstName')}
           value={formik.values.firstName}
           onChange={formik.handleChange}
         />
@@ -92,7 +94,7 @@ const ContactForm: React.FC = () => {
       <InputContainer>
         <Input
           name="lastName"
-          placeholder="Nazwisko"
+          placeholder={t('contactForm.lastName')}
           value={formik.values.lastName}
           onChange={formik.handleChange}
         />
@@ -104,7 +106,7 @@ const ContactForm: React.FC = () => {
       <InputContainer>
         <Input
           name="email"
-          placeholder="Email"
+          placeholder={t('contactForm.email')}
           value={formik.values.email}
           onChange={formik.handleChange}
         />
@@ -113,7 +115,7 @@ const ContactForm: React.FC = () => {
 
       <PhoneInputStyledContainer>
         <PhoneInput
-          placeholder="Numer telefonu"
+          placeholder={t('contactForm.phone')}
           defaultCountry="PL"
           value={formik.values.phone}
           onChange={(value) => formik.setFieldValue("phone", value || "")}
@@ -124,7 +126,7 @@ const ContactForm: React.FC = () => {
       <InputContainer>
         <TextArea
           name="message"
-          placeholder="Treść zapytania"
+          placeholder={t('contactForm.message')}
           value={formik.values.message}
           onChange={formik.handleChange}
         />
@@ -133,7 +135,7 @@ const ContactForm: React.FC = () => {
         )}
       </InputContainer>
 
-      <SubmitButton type="submit">Wyślij</SubmitButton>
+      <SubmitButton type="submit">{t('contactForm.submit')}</SubmitButton>
     </FormContainer>
   );
 };
