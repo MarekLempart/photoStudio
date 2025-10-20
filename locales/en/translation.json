@@ -83,5 +83,367 @@
             "wnętrza stylizacje": "Interior photos that capture their unique atmosphere, thoughtful design, and attention to the smallest details.",
             "wnętrza nieruchomości": "Bright and spacious photos of real estate for sale or rent, which effectively attract the attention of potential clients."
         }
+    },
+    "about": {
+        "person1": {
+            "description": "Marta Matczuk-Pisarek – photographer",
+            "quote": "\"Photography has been with me for many years. I spend most of my time on digital photography, although I started with analog and returned to it after years. I am fascinated by all the snippets of reality that can be captured in an image. I most enjoy photographing people – especially when they allow themselves to be themselves. This happens often in my sessions :). The most difficult art in photography is the portrait – it requires getting between the skin and the shirt of the person being photographed. Henri Cartier-Bresson.\""
+        }
+    },
+    "offer": {
+        "business1": {
+            "title": "For Business",
+            "sections": [
+                {
+                    "title": "My Image",
+                    "content": [
+                        {
+                            "point": "I will create professional photos for you that will distinguish your company, personal brand"
+                        },
+                        {
+                            "point": "– your business and save you valuable time in running your business."
+                        },
+                        {
+                            "point": "I will prepare thematic packages of photos ready for publication, tailored and adapted to your business profile based on an individual session concept, in which we will jointly place what is most important in your business."
+                        }
+                    ]
+                },
+                {
+                    "title": "Basic Package",
+                    "content": [
+                        {
+                            "point": "Includes:",
+                            "subpoints": [
+                                "1 hour photo session at a selected location",
+                                "10 carefully edited and retouched photos in JPG format",
+                                "email or phone consultation",
+                                "creation of an inspiration board",
+                                "independent selection of photos for editing",
+                                "option to purchase additional photos from the session for 50 PLN gross per photo"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Standard Package",
+                    "content": [
+                        {
+                            "point": "Includes:",
+                            "subpoints": [
+                                "everything in the basic package",
+                                "1.5 hour photo session at a selected location",
+                                "20 carefully edited and retouched photos in JPG format",
+                                "option to purchase additional photos from the session for 40 PLN gross per photo"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Extended Package",
+                    "content": [
+                        {
+                            "point": "Includes:",
+                            "subpoints": [
+                                "everything in the basic package",
+                                "2 hour photo session at a selected location",
+                                "30 carefully edited and retouched photos in JPG format",
+                                "option to purchase additional photos from the session for 30 PLN gross per photo"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "business2": {
+            "title": "For Business",
+            "sections": [
+                {
+                    "title": "My Place, My Service, My Product",
+                    "content": [
+                        {
+                            "point": "If you need to present your salon, shop, products, services, we will create a session together that will reflect the character of your company."
+                        },
+                        {
+                            "point": "A corporate session aims to familiarize a potential client with your brand and encourage them to use your services or products."
+                        },
+                        {
+                            "point": "In response to your company's needs, I will develop a concept and organize the entire process."
+                        },
+                        {
+                            "point": "I will recommend proven subcontractors (from makeup artists to florists)."
+                        },
+                        {
+                            "point": "During the session, I will take care of every detail that affects your company's image."
+                        }
+                    ]
+                },
+                {
+                    "title": "Standard Package",
+                    "content": [
+                        {
+                            "point": "Includes:",
+                            "subpoints": [
+                                "email or phone consultation",
+                                "creative session concept",
+                                "2 hour photo session at a selected location",
+                                "photographing up to 5 products or 5 arrangements",
+                                "independent selection of photos for editing",
+                                "20 carefully edited and retouched photos in JPG format",
+                                "option to purchase additional photos from the session for 40 PLN gross per photo"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Extended Package",
+                    "content": [
+                        {
+                            "point": "Includes:",
+                            "subpoints": [
+                                "email or phone consultation",
+                                "creative session concept",
+                                "4 hour photo session at a selected location",
+                                "photographing up to 12 products or 12 arrangements",
+                                "independent selection of photos for editing",
+                                "30 carefully edited and retouched photos in JPG format",
+                                "option to purchase additional photos from the session for 30 PLN gross per photo"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "info": {
+            "title": "Important Information",
+            "sections": [
+                {
+                    "title": "Session Concept",
+                    "content": [
+                        {
+                            "point": "First, you briefly describe what kind of photos you need."
+                        },
+                        {
+                            "point": "Then, we discuss the details in a short phone call or via email, and then we sign a contract."
+                        },
+                        {
+                            "point": "Before the session, I will advise on how to prepare, recommend subcontractors, and prepare a list of accessories and wardrobe items."
+                        }
+                    ]
+                },
+                {
+                    "title": "Photo Session",
+                    "content": [
+                        {
+                            "point": "The session can take place in a studio or at your company."
+                        },
+                        {
+                            "point": "We will choose the best option together."
+                        },
+                        {
+                            "point": "During the photoshoot, I will ensure a comfortable and friendly atmosphere."
+                        }
+                    ]
+                },
+                {
+                    "title": "Final Effect",
+                    "content": [
+                        {
+                            "point": "After the session, I will send you watermarked photos to choose from."
+                        },
+                        {
+                            "point": "You will decide which photos you want to receive."
+                        },
+                        {
+                            "point": "I will subject them to natural processing and delicate retouching without modification."
+                        }
+                    ]
+                }
+            ]
+        },
+        "personal": {
+            "title": "For Yourself",
+            "sections": [
+                {
+                    "title": "You Can Be Yourself",
+                    "content": [
+                        {
+                            "point": "I love to capture beauty and emotions in an image. To give them form and frame."
+                        },
+                        {
+                            "point": "I can build an atmosphere that encourages openness. You can be yourself during my sessions."
+                        }
+                    ]
+                },
+                {
+                    "title": "Standard Package",
+                    "content": [
+                        {
+                            "point": "Includes:",
+                            "subpoints": [
+                                "1 hour photo session at a selected location: outdoor, studio, favorite cafe, home",
+                                "travel within Wrocław, Jelenia Góra, and the Wrocław, Trzebnica, and Karkonosze counties",
+                                "15 best photos in digital version, with author's editing",
+                                "option to purchase as a gift voucher",
+                                "independent selection of photos for editing",
+                                "option to purchase additional photos from the session for 50 PLN gross per photo"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Extended Package",
+                    "content": [
+                        {
+                            "point": "Includes:",
+                            "subpoints": [
+                                "3 hour photo session at a selected location: outdoor, studio, favorite cafe, home",
+                                "travel up to 100km from Wrocław (over 100 km price set individually)",
+                                "30 best photos with author's editing in digital version",
+                                "option to purchase as a gift voucher",
+                                "independent selection of photos for editing",
+                                "paper prints in 15 x 21cm format",
+                                "option to purchase additional photos from the session for 40 PLN gross per photo"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Session Concept",
+                    "content": [
+                        {
+                            "point": "You describe to me in a few words what kind of photos you need."
+                        },
+                        {
+                            "point": "We discuss the details in a short phone call, in person, or via email, and then we sign a contract."
+                        }
+                    ]
+                },
+                {
+                    "title": "Photo Session",
+                    "content": [
+                        {
+                            "point": "The session can take place in a studio, outdoors, your favorite place, or at home."
+                        },
+                        {
+                            "point": "We will choose the best option together."
+                        },
+                        {
+                            "point": "During the photoshoot, I will ensure a friendly atmosphere."
+                        },
+                        {
+                            "point": "I will prepare you for working in front of the lens."
+                        }
+                    ]
+                },
+                {
+                    "title": "Final Effect",
+                    "content": [
+                        {
+                            "point": "After the session, I will send you the best shots with a watermark for you to choose from."
+                        },
+                        {
+                            "point": "I will subject them to natural processing and delicate retouching, and in the case of fairytale sessions, additional special effects."
+                        },
+                        {
+                            "point": "You will receive them in digital form and as paper prints packed in an elegant package."
+                        }
+                    ]
+                }
+            ]
+        },
+        "additionalInfo": {
+            "title": "Additional Information",
+            "sections": [
+                {
+                    "title": "What You Can Expect:",
+                    "content": [
+                        {
+                            "point": "I send photos for review within 7 days after the session. You will receive the final, edited files within 14 days of selecting the photographs."
+                        },
+                        {
+                            "point": "I grant an exclusive, non-territorially and non-time-limited license for the photos."
+                        },
+                        {
+                            "point": "Waiver by the author of the rights under Art. 16 of the Act on Copyright and Related Rights in the indicated fields of exploitation (consent to share photographs anonymously) increases the cost of each package by 500 PLN."
+                        },
+                        {
+                            "point": "I cooperate with makeup artists, hairdressers, stylists, florists, and tailors. If you want to use such a service, I can connect you with trusted professionals."
+                        },
+                        {
+                            "point": "I live alternately near Wrocław and in Jelenia Góra. Travel to other locations is possible by prior arrangement."
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "regulations": {
+        "title": "Terms of Photographic Services",
+        "sections": [
+            {
+                "title": "General Provisions",
+                "content": [
+                    {
+                        "point": "The regulations define the rules for the provision of photographic services by the photo studio."
+                    },
+                    {
+                        "point": "The photo studio operates in accordance with applicable law."
+                    },
+                    {
+                        "point": "The client undertakes to comply with the regulations."
+                    }
+                ]
+            },
+            {
+                "title": "Reservations and Payments",
+                "content": [
+                    {
+                        "point": "Reservations for photo sessions are made by phone or email.",
+                        "subpoints": [
+                            "The reservation is confirmed upon payment of a deposit of 30% of the service value.",
+                            "The remaining amount is payable on the day of the service."
+                        ]
+                    },
+                    {
+                        "point": "Cancellation of reservation:",
+                        "subpoints": [
+                            "The client has the right to cancel the reservation no later than 48 hours before the scheduled session.",
+                            "In case of cancellation in a shorter time, the deposit is non-refundable."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Service Delivery",
+                "content": [
+                    {
+                        "point": "The photo studio provides the appropriate equipment and conditions to perform the service."
+                    },
+                    {
+                        "point": "The client is responsible for preparing for the session (e.g., makeup, styling), unless a package including these services has been purchased."
+                    },
+                    {
+                        "point": "The photos are delivered in digital form, unless otherwise agreed.",
+                        "subpoints": [
+                            "The waiting time for the photos is up to 14 working days from the day of the session."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Copyright",
+                "content": [
+                    {
+                        "point": "The photo studio reserves the right to use the photos for promotional purposes.",
+                        "subpoints": [
+                            "The client may express written objection to such use of the photos."
+                        ]
+                    },
+                    {
+                        "point": "The delivered photos may not be edited or used commercially without the studio's consent."
+                    }
+                ]
+            }
+        ]
     }
 }
