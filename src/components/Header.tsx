@@ -210,6 +210,17 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
         {isMobileOrTablet && (
           <MobileIconsContainer>
             <ThemeToggleButtonWrapper>
+              <LanguageToggleSlider
+                onClick={() => changeLanguage(language === "pl" ? "en" : "pl")}
+                $isDarkMode={isDarkMode}
+              >
+                <LanguageToggleButton $active={language === "en"}>
+                  {language === "en" ? <GbFlagIcon /> : <PlFlagIcon />}
+                </LanguageToggleButton>
+              </LanguageToggleSlider>
+            </ThemeToggleButtonWrapper>
+
+            <ThemeToggleButtonWrapper>
               <ThemeToggleSlider
                 onClick={toggleTheme}
                 $active={isDarkMode}
