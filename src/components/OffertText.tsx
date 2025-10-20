@@ -1,13 +1,20 @@
 // src/components/OffertText.tsx
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { OffertTextData } from "../data/offertTextDataTypes";
 import { OffertTextContainer, Section, Title, Point, SubPoint } from "../styles/OffertTextStyles";
 
 interface OffertTextProps {
-    data: OffertTextData;
+    dataKey: string;
 }
 
-const OffertText: React.FC<OffertTextProps> = ({ data }) => {
+const OffertText: React.FC<OffertTextProps> = ({ dataKey }) => {
+    const { t } = useTranslation();
+    const data = t(dataKey, { returnObjects: true }) as OffertTextData;
+    if (!data || !data.sections) {
+        return null;
+    }
+
     return (
         <OffertTextContainer>
             <Title>{data.title}</Title>

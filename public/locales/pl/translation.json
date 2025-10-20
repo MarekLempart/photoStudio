@@ -83,5 +83,367 @@
             "wnętrza stylizacje": "Zdjęcia wnętrz, które oddają ich unikalny klimat, przemyślany design i dbałość o najmniejsze detale.",
             "wnętrza nieruchomości": "Jasne i przestronne zdjęcia nieruchomości na sprzedaż lub wynajem, które skutecznie przyciągają uwagę potencjalnych klientów."
         }
+    },
+    "about": {
+        "person1": {
+            "description": "Marta Matczuk-Pisarek – fotograf",
+            "quote": "\"Fotografia towarzyszy mi od wielu lat. Najwięcej czasu poświęcam fotografii cyfrowej, choć zaczynałam od analogowej i po latach do niej wróciłam. Fascynują mnie wszelkie wycinki rzeczywistości, które można zamknąć w obrazie. Najbardziej lubię fotografować ludzi – szczególnie wtedy, gdy pozwalają sobie być sobą. Na moich sesjach zdarza się to często :). Najtrudniejszą sztuką w fotografii jest portret – wymaga wejścia z aparatem między skórę a koszulę osoby fotografowanej. Henri Cartier-Bresson.\""
+        }
+    },
+    "offer": {
+        "business1": {
+            "title": "Dla biznesu",
+            "sections": [
+                {
+                    "title": "Mój wizerunek",
+                    "content": [
+                        {
+                            "point": "Stworzę dla Ciebie profesjonalne zdjęcia, które wyróżnią Twoją firmę, markę osobistą"
+                        },
+                        {
+                            "point": "– Twój biznes i pozwolą zaoszczędzisz cenny w prowadzeniu działalności czas."
+                        },
+                        {
+                            "point": "Przygotuję tematyczne pakiety zdjęć gotowych do publikacji, skrojone na miarę i dopasowane do profilu działalności w oparciu o indywidulaną koncepcję sesji, w której umieścimy wspólnie to co najważniejsze w Twoim biznesie."
+                        }
+                    ]
+                },
+                {
+                    "title": "Pakiet bazowy",
+                    "content": [
+                        {
+                            "point": "Obejmuje:",
+                            "subpoints": [
+                                "1 godzina sesji zdjęciowej w wybranej lokalizacji",
+                                "10 starannie wyedytowanych i wyretuszowanych zdjęć w formacie JPG",
+                                "konsultacja mailowa lub telefoniczna",
+                                "stworzenie tablicy inspiracji",
+                                "samodzielny wybór zdjęć do edycji",
+                                "możliwość dokupienia dodatkowych zdjęć z sesji w cenie 50 zł brutto za zdjęcie"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Pakiet standardowy",
+                    "content": [
+                        {
+                            "point": "Obejmuje:",
+                            "subpoints": [
+                                "to, co w pakiecie bazowym",
+                                "1,5 godzina sesji zdjęciowej w wybranej lokalizacji",
+                                "20 starannie wyedytowanych i wyretuszowanych zdjęć w formacie JPG",
+                                "możliwość dokupienia dodatkowych zdjęć z sesji w cenie 40 zł brutto za zdjęcie"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Pakiet powiększony",
+                    "content": [
+                        {
+                            "point": "Obejmuje:",
+                            "subpoints": [
+                                "to, co w pakiecie bazowym",
+                                "2 godziny sesji zdjęciowej w wybranej lokalizacji",
+                                "30 starannie wyedytowanych i wyretuszowanych zdjęć w formacie JPG",
+                                "możliwość dokupienia dodatkowych zdjęć z sesji w cenie 30 zł brutto za zdjęcie"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "business2": {
+            "title": "Dla biznesu",
+            "sections": [
+                {
+                    "title": "Moje miejsce, moja usługa, mój produkt",
+                    "content": [
+                        {
+                            "point": "Jeśli potrzebujesz zaprezentować swój salon, sklep, produkty, usługi to wspólnie stworzymy sesję, która odda charakter Twojej firmy."
+                        },
+                        {
+                            "point": "Sesja firmowa ma na celu zapoznać potencjalnego klienta z Twoją marką i zachęcić do skorzystania z usług czy produktów."
+                        },
+                        {
+                            "point": "W odpowiedzi na potrzeby Twojej firmy opracuję koncepcję i zorganizuję cały proces."
+                        },
+                        {
+                            "point": "Zarekomenduję sprawdzonych podwykonawców (od wizażystów po florystów)."
+                        },
+                        {
+                            "point": "W trakcie sesji zatroszczę się każdy szczegół, który wpływa na obraz Twojej firmy."
+                        }
+                    ]
+                },
+                {
+                    "title": "Pakiet standardowy",
+                    "content": [
+                        {
+                            "point": "Obejmuje:",
+                            "subpoints": [
+                                "konsultacja mailowa lub telefoniczna",
+                                "koncepcja kreatywna sesji",
+                                "2 godziny sesji zdjęciowej w wybranej lokalizacji",
+                                "sfotografowanie do 5 produktów lub 5 aranżacji",
+                                "samodzielny wybór zdjęć do edycji",
+                                "20 starannie wyedytowanych i wyretuszowanych zdjęć w formacie JPG",
+                                "możliwość dokupienia dodatkowych zdjęć z sesji w cenie 40 zł brutto za zdjęcie"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Pakiet powiększony",
+                    "content": [
+                        {
+                            "point": "Obejmuje:",
+                            "subpoints": [
+                                "konsultacja mailowa lub telefoniczna",
+                                "koncepcja kreatywna sesji",
+                                "4 godziny sesji zdjęciowej w wybranej lokalizacji",
+                                "sfotografowanie do 12 produktów lub 12 aranżacji",
+                                "samodzielny wybór zdjęć do edycji",
+                                "30 starannie wyedytowanych i wyretuszowanych zdjęć w formacie JPG",
+                                "możliwość dokupienia dodatkowych zdjęć z sesji w cenie 30 zł brutto za zdjęcie"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "info": {
+            "title": "Ważne informacje",
+            "sections": [
+                {
+                    "title": "Koncepcja sesji",
+                    "content": [
+                        {
+                            "point": "Najpierw opisujesz krótko jakich zdjęć potrzebujesz."
+                        },
+                        {
+                            "point": "Potem omawiamy szczegóły w krótkiej rozmowie telefonicznej lub mailowo, a następnie podpisujemy umowę."
+                        },
+                        {
+                            "point": "Zanim przystąpimy do sesji podpowiem jak się przygotować, zarekomenduję podwykonawców i przygotuję listę akcesoriów oraz elementów garderoby."
+                        }
+                    ]
+                },
+                {
+                    "title": "Sesja zdjęciowa",
+                    "content": [
+                        {
+                            "point": "Sesja może odbyć się w studio lub w Twojej firmie."
+                        },
+                        {
+                            "point": "Wspólnie wybierzemy najlepszą opcję."
+                        },
+                        {
+                            "point": "Podczas zdjęć zadbam o komfort i przyjazną atmosferę."
+                        }
+                    ]
+                },
+                {
+                    "title": "Efekt końcowy",
+                    "content": [
+                        {
+                            "point": "Posesji prześlę zdjęcia ze znakiem wodnym do wyboru."
+                        },
+                        {
+                            "point": "Samodzielnie zdecydujesz, które zdjęcia chcesz otrzymasz."
+                        },
+                        {
+                            "point": "Poddam je naturalnej obróbce oraz delikatnemu retuszowi bez modyfikacji."
+                        }
+                    ]
+                }
+            ]
+        },
+        "personal": {
+            "title": "Dla siebie",
+            "sections": [
+                {
+                    "title": "Możesz być sobą",
+                    "content": [
+                        {
+                            "point": "Uwielbiam zatrzymywać piękno i emocje w obrazie. Nadać im formę i ramy."
+                        },
+                        {
+                            "point": "Potrafię zbudować atmosferę, która sprzyja otwartości. Podczas sesji u mnie możesz być sobą."
+                        }
+                    ]
+                },
+                {
+                    "title": "Pakiet standardowy",
+                    "content": [
+                        {
+                            "point": "Obejmuje:",
+                            "subpoints": [
+                                "1 godzina sesji zdjęciowej w wybranej lokalizacji: plener, studio, ulubiona kawiarnia, dom",
+                                "dojazd na terenie Wrocławia, Jeleniej Góry oraz powiatu wrocławskiego , trzebnickiego i karkonoskiego",
+                                "15 najlepszych zdjęć w wersji cyfrowej, poddanych autorskiej edycji",
+                                "możliwość zakupu w formie vouchera na prezent",
+                                "samodzielny wybór zdjęć do edycji",
+                                "możliwość dokupienia dodatkowych zdjęć z sesji w cenie 50 zł brutto za zdjęcie"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Pakiet rozszerzony",
+                    "content": [
+                        {
+                            "point": "Obejmuje:",
+                            "subpoints": [
+                                "3 godziny sesji zdjęciowej w wybranej lokalizacji: plener, studio, ulubiona kawiarnia, dom",
+                                "dojazd do 100km od Wrocławia (powyżej 100 km cena ustalana indywidualnie)",
+                                "30 najlepszych zdjęć poddanych autorskiej edycji w wersji cyfrowej",
+                                "możliwość zakupu w formie vouchera na prezent",
+                                "samodzielny wybór zdjęć do edycji",
+                                "odbitki papierowe w formacie 15 x 21cm",
+                                "możliwość dokupienia dodatkowych zdjęć z sesji w cenie 40 zł brutto za zdjęcie"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Koncepcja sesji",
+                    "content": [
+                        {
+                            "point": "W kilku słowach opisujesz mi, jakich zdjęć potrzebujesz."
+                        },
+                        {
+                            "point": "Omawiamy szczegóły w krótkiej rozmowie telefonicznej, na żywo lub mailowo, a następnie podpisujemy umowę."
+                        }
+                    ]
+                },
+                {
+                    "title": "Sesja zdjęciowa",
+                    "content": [
+                        {
+                            "point": "Sesja może odbyć się w studio, plenerze, Twojej ulubionym miejscu lub w domu."
+                        },
+                        {
+                            "point": "Wspólnie wybierzemy najlepszą opcję."
+                        },
+                        {
+                            "point": "Podczas zdjęć zadbam o przyjazną atmosferę."
+                        },
+                        {
+                            "point": "PPrzygotuję do pracy przed obiektywem."
+                        }
+                    ]
+                },
+                {
+                    "title": "Efekt końcowy",
+                    "content": [
+                        {
+                            "point": "Po sesji prześlę do wyboru najlepsze ujęcia ze znakiem wodnym od samodzielnego wyboru."
+                        },
+                        {
+                            "point": "Poddam je naturalnej obróbce oraz delikatnemu retuszowi a w przypadku sesji bajkowych dodatkowym efektom specjalnym."
+                        },
+                        {
+                            "point": "Otrzymasz je w formie cyfrowej oraz w postaci papierowych odbitek zapakowanych w eleganckie opakowanie."
+                        }
+                    ]
+                }
+            ]
+        },
+        "additionalInfo": {
+            "title": "Dodatkowe informacje",
+            "sections": [
+                {
+                    "title": "Czego możesz oczekiwać:",
+                    "content": [
+                        {
+                            "point": "Zdjęcia do wglądu wysyłam do 7 dni po sesji. Gotowe, wyedytowane pliki otrzymasz w ciągu 14 dni od wyboru fotografii."
+                        },
+                        {
+                            "point": "Na zdjęcia udzielam licencji wyłącznej, nieograniczonej terytorialnie ani czasowo."
+                        },
+                        {
+                            "point": "Zrzeczenie się przez autorkę praw wynikających z art. 16 ustawy o prawie autorskim i prawach pokrewnych na wskazanych polach eksploatacji (zgoda na udostępnianie fotografii anonimowo) podnosi koszt każdego pakietu o 500 zł."
+                        },
+                        {
+                            "point": "Współpracuję z wizażystami, fryzjerami, stylistami, florystkami, krawcowymi. Jeśli chcesz skorzystać z takiej usługi, mogę skontaktować Cię ze sprawdzonymi osobami."
+                        },
+                        {
+                            "point": "Mieszkam na zmianę w okolicach Wrocławia i w Jeleniej Górze. Dojazd w inne lokalizacje jest możliwy po wcześniejszym uzgodnieniu."
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "regulations": {
+        "title": "Regulamin Usług Fotograficznych",
+        "sections": [
+            {
+                "title": "Postanowienia ogólne",
+                "content": [
+                    {
+                        "point": "Regulamin określa zasady świadczenia usług fotograficznych przez studio fotograficzne."
+                    },
+                    {
+                        "point": "Studio fotograficzne działa zgodnie z obowiązującymi przepisami prawa."
+                    },
+                    {
+                        "point": "Klient zobowiązuje się do przestrzegania regulaminu."
+                    }
+                ]
+            },
+            {
+                "title": "Rezerwacje i płatności",
+                "content": [
+                    {
+                        "point": "Rezerwacje sesji fotograficznych odbywają się poprzez kontakt telefoniczny lub mailowy.",
+                        "subpoints": [
+                            "Rezerwacja zostaje potwierdzona po wpłacie zadatku w wysokości 30% wartości usługi.",
+                            "Pozostała kwota płatna jest w dniu realizacji usługi."
+                        ]
+                    },
+                    {
+                        "point": "Odwołanie rezerwacji:",
+                        "subpoints": [
+                            "Klient ma prawo odwołać rezerwację najpóźniej na 48 godzin przed planowaną sesją.",
+                            "W przypadku odwołania w krótszym czasie, zadatek nie podlega zwrotowi."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Realizacja usług",
+                "content": [
+                    {
+                        "point": "Studio fotograficzne zapewnia sprzęt i warunki odpowiednie do wykonania usługi."
+                    },
+                    {
+                        "point": "Klient jest odpowiedzialny za przygotowanie do sesji (np. makijaż, stylizacja), jeśli nie wykupiono pakietu zawierającego te usługi."
+                    },
+                    {
+                        "point": "Przekazanie zdjęć odbywa się w formie cyfrowej, chyba że uzgodniono inaczej.",
+                        "subpoints": [
+                            "Czas oczekiwania na zdjęcia wynosi do 14 dni roboczych od dnia sesji."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Prawa autorskie",
+                "content": [
+                    {
+                        "point": "Studio fotograficzne zastrzega sobie prawo do wykorzystywania zdjęć do celów promocyjnych.",
+                        "subpoints": [
+                            "Klient może wyrazić pisemny sprzeciw wobec takiego wykorzystania zdjęć."
+                        ]
+                    },
+                    {
+                        "point": "Przekazane zdjęcia nie mogą być edytowane lub wykorzystywane komercyjnie bez zgody studia."
+                    }
+                ]
+            }
+        ]
     }
 }

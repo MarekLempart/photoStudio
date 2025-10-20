@@ -1,34 +1,28 @@
 // src/pages/Offert.tsx
 import OffertText from "../components/OffertText";
 import ImageSlider from "../components/ImageSlider";
-import { offertTextData01 } from "../data/offertTextData01";
-import { offertTextData02 } from "../data/offertTextData02";
-import { offertTextData03 } from "../data/offertTextData03";
-import { offertTextData04 } from "../data/offertTextData04";
-import { offertTextData05 } from "../data/offertTextData05";
-
 import { Container, SliderContainer } from "../styles/OffertStyles";
 
 const Offert = () => {
   return (
     <Container>
-      <OffertText data={offertTextData01} />
+      <OffertText dataKey="offer.business1" />
       <SliderContainer>
         <ImageSlider folder="twój wizerunek" />
       </SliderContainer>
-      <OffertText data={offertTextData02} />
+      <OffertText dataKey="offer.business2" />
       <SliderContainer>
         <ImageSlider folder="twój biznes" />
       </SliderContainer>
-      <OffertText data={offertTextData03} />
+      <OffertText dataKey="offer.info" />
       <SliderContainer>
         <ImageSlider folder="produktowe" />
       </SliderContainer>
-      <OffertText data={offertTextData04} />
+      <OffertText dataKey="offer.personal" />
       <SliderContainer>
         <ImageSlider folder="dzieci" />
       </SliderContainer>
-      <OffertText data={offertTextData05} />
+      <OffertText dataKey="offer.additionalInfo" />
       <SliderContainer>
         <ImageSlider folder="stylizowane kobiece" />
       </SliderContainer>

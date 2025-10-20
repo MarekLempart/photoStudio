@@ -1,27 +1,29 @@
 // src/pages/About.tsx
 import React from "react";
+import { useTranslation } from "react-i18next";
 import personImageData from "../data/personImageData";
-import personTextData from "../data/personTextData";
 import PersonCard from "../components/PersonCard";
-import {
-  ContactContainer,
-} from "../styles/ContactStyles";
+import { ContactContainer } from "../styles/ContactStyles";
+
+interface PersonText {
+  description: string;
+  quote: string;
+}
 
 const About: React.FC = () => {
+  const { t } = useTranslation();
+  const personText = t('about.person1', { returnObjects: true }) as PersonText;
+  const image = personImageData.find((img) => img.id === 'person1');
+  if (!image || !personText) return null;
+
   return (
     <ContactContainer>
-      {personTextData.map((person, index) => {
-        const image = personImageData.find((img) => img.id === person.id);
-        if (!image) return null;
-        return (
-          <PersonCard
-            key={person.id}
-            image={image}
-            text={person}
-            $reverse={index % 2 !== 0} // Odwracamy kolejność co drugi wiersz
-          />
-        );
-      })}
+      <PersonCard
+        key={'person1'}
+        image={image}
+        text={personText}
+        $reverse={false}
+      />
     </ContactContainer>
   );
 };

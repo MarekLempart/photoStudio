@@ -10,7 +10,7 @@ import {
 
 interface PersonCardProps {
   image: { id: string; src: string };
-  text: { id: string; description: string; quote: string };
+  text: { description: string; quote: string };
   $reverse?: boolean;
   $smallImage?: boolean;
 }
