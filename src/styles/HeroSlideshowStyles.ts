@@ -15,7 +15,7 @@ export const SlideshowContainer = styled.div`
   margin: 0px auto 0px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    height: auto;
+    height: 600px;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.mobile})
@@ -25,7 +25,7 @@ export const SlideshowContainer = styled.div`
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet})
     and (max-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    margin: 20px auto 0px;
+    margin: 10px auto 0px;
   }
 `;
 
@@ -50,7 +50,7 @@ export const TextOverlay = styled.div`
 
 export const HeroText = styled(motion.h3)`
   font-family: "Caveat", cursive;
-  font-size: 28px;
+  font-size: 24px;
   color: ${({ theme }) => theme.colors.colMilkPunch};
   text-align: center;
   line-height: 1.5;
