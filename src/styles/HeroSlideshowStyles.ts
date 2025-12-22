@@ -14,24 +14,24 @@ export const SlideshowContainer = styled.div`
   box-shadow: 10px 15px 20px rgba(168, 162, 138, 0.6);
   margin: 0px auto 0px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    height: 600px;
+  /* @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    height: auto;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.mobile})
     and (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    height: calc(100vh - 160px);
+    height: calc(100vh - 190px);
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet})
     and (max-width: ${({ theme }) => theme.breakpoints.desktop}) {
     margin: 20px auto 0px;
-  }
+  } */
 `;
 
 export const StyledImage = styled(motion.img)`
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 160px);
   object-fit: cover;
   border-radius: 10px;
 `;
