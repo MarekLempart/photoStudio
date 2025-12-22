@@ -13,7 +13,7 @@
     },
     "contactDetails": {
         "title": "Contact Details",
-        "location": "Wrocław, Poland"
+        "location": "Wrocławska St. 26, Łozina, Poland"
     },
     "contactForm": {
         "title": "Contact",
@@ -38,7 +38,7 @@
     },
     "footer": {
         "photographer": "Photographer:",
-        "copyright": "© 2024 Template Vite - React/TS"
+        "copyright": "© 2025 Template Vite - React/TS"
     },
     "portfolio": {
         "categoryTitle": "Category {{index}} – {{name}}",
@@ -118,7 +118,7 @@
                                 "email or phone consultation",
                                 "creation of an inspiration board",
                                 "independent selection of photos for editing",
-                                "option to purchase additional photos from the session for 50 PLN gross per photo"
+                                "option to purchase additional photos from the session - ask for the price"
                             ]
                         }
                     ]
@@ -132,7 +132,7 @@
                                 "everything in the basic package",
                                 "1.5 hour photo session at a selected location",
                                 "20 carefully edited and retouched photos in JPG format",
-                                "option to purchase additional photos from the session for 40 PLN gross per photo"
+                                "option to purchase additional photos from the session - ask for the price"
                             ]
                         }
                     ]
@@ -146,7 +146,7 @@
                                 "everything in the basic package",
                                 "2 hour photo session at a selected location",
                                 "30 carefully edited and retouched photos in JPG format",
-                                "option to purchase additional photos from the session for 30 PLN gross per photo"
+                                "option to purchase additional photos from the session - ask for the price"
                             ]
                         }
                     ]
@@ -188,7 +188,7 @@
                                 "photographing up to 5 products or 5 arrangements",
                                 "independent selection of photos for editing",
                                 "20 carefully edited and retouched photos in JPG format",
-                                "option to purchase additional photos from the session for 40 PLN gross per photo"
+                                "option to purchase additional photos from the session - ask for the price"
                             ]
                         }
                     ]
@@ -205,7 +205,7 @@
                                 "photographing up to 12 products or 12 arrangements",
                                 "independent selection of photos for editing",
                                 "30 carefully edited and retouched photos in JPG format",
-                                "option to purchase additional photos from the session for 30 PLN gross per photo"
+                                "option to purchase additional photos from the session - ask for the price"
                             ]
                         }
                     ]
@@ -284,7 +284,7 @@
                                 "15 best photos in digital version, with author's editing",
                                 "option to purchase as a gift voucher",
                                 "independent selection of photos for editing",
-                                "option to purchase additional photos from the session for 50 PLN gross per photo"
+                                "option to purchase additional photos from the session - ask for the price"
                             ]
                         }
                     ]
@@ -301,7 +301,7 @@
                                 "option to purchase as a gift voucher",
                                 "independent selection of photos for editing",
                                 "paper prints in 15 x 21cm format",
-                                "option to purchase additional photos from the session for 40 PLN gross per photo"
+                                "option to purchase additional photos from the session - ask for the price"
                             ]
                         }
                     ]

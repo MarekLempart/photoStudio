@@ -61,10 +61,6 @@ const HeroSlideshow = () => {
       <StyledImage
         src={currentImage}
         alt={imageHero[currentImageIndex].id}
-      // initial={{ filter: "blur(0px)" }}
-      // animate={{ filter: isAnimating ? "blur(30px)" : "blur(0px)" }}
-      // transition={{ duration: 1 }}
-      // onAnimationComplete={isAnimating ? handleAnimationComplete : undefined}
       />
       <DarkOverlay
         initial={{ opacity: 0 }} // Rozpoczyna bez zaciemnienia

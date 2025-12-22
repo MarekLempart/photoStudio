@@ -140,7 +140,6 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
       <HeaderWrapper
         className={`${isHeaderVisible ? "visible" : "hidden"} ${isMenuOpen ? "menu-open" : ""}`}
       >
-        {/* <HeaderWrapper className={isMenuOpen ? "menu-open" : ""}> */}
         <Logo>
           <ImageComponent />
         </Logo>

@@ -5,16 +5,16 @@ export const PersonCardContainer = styled.div<{ $reverse: boolean }>`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin: 0px auto 20px;
+  margin: 0px auto 0px;
 
   @media ${({ theme }) => theme.media.tabletAndDesktop} {
     flex-direction: ${({ $reverse }) => ($reverse ? "row-reverse" : "row")};
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
   }
 
   @media ${({ theme }) => theme.media.desktop} {
-    gap: 40px;
+    gap: 140px;
   }
 `;
 
@@ -31,7 +31,7 @@ export const ImageWrapper = styled.div<{ $smallImage?: boolean }>`
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: ${({ $smallImage }) => ($smallImage ? "70%" : "100%")};
   max-width: ${({ $smallImage }) => ($smallImage ? "600px" : "100%")};
 

@@ -13,14 +13,6 @@ import './i18n';
 import { Spin } from 'antd';
 
 createRoot(document.getElementById('root')!).render(
-  // <StrictMode>
-  //   <ThemeContextProvider>
-  //     <GlobalStyles />
-  //     <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
-  //       <App />
-  //     </BrowserRouter>
-  //   </ThemeContextProvider>
-  // </StrictMode>
   <StrictMode>
     {/* Suspense jest potrzebny, aby poczekać na załadowanie plików językowych */}
     <Suspense fallback={<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}><Spin size="large" /></div>}>

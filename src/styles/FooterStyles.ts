@@ -44,35 +44,6 @@ export const ContactLine = styled.p`
   }
 `;
 
-export const LogoContainer = styled.div`
-  margin: 15px 0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-`;
-
-export const Logo = styled.img`
-  height: 40px;
-  padding: 5px;
-  will-change: filter, transform;
-  transition: filter 300ms, transform 300ms;
-
-  &:hover {
-    filter: drop-shadow(
-      0 0 15px ${({ theme }) => theme.colors.textBrightBrown}
-    );
-    transform: scale(1.1);
-  }
-`;
-
-export const PhotographerLogo = styled.div`
-  margin: 15px 0;
-  img {
-    height: 50px;
-    width: auto;
-  }
-`;
-
 export const FooterText = styled.p`
   margin-top: 8px;
   font-size: 10px;

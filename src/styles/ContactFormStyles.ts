@@ -91,15 +91,6 @@ export const InputContainer = styled.div`
   }
 `;
 
-export const InputTitle = styled.div`
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  width: 140px;
-  font-size: 16px;
-  color: ${({ theme }) => theme.colors.textPrimary};
-`;
-
 export const Input = styled.input`
   width: 100%;
   padding: 10px;

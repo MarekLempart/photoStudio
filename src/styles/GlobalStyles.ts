@@ -39,11 +39,6 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
   }
 
-  /* #root {
-    display: flex;
-    justify-content: center;
-  } */
-
   .app-container {
     width: 100%;
     max-width: ${({ theme }) => theme.breakpoints.desktop};
@@ -74,16 +69,6 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     text-align: left;
   }
-
-  /* .header-visible {
-    transform: translateY(0);
-    transition: transform 0.3s ease-in-out;
-  } */
-
-  /* .header-hidden {
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
-  } */
   
   .slick-prev:before,
   .slick-next:before {

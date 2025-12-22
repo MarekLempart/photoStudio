@@ -3,6 +3,7 @@ import { useState, useEffect, Suspense } from "react";
 import { useTheme } from "styled-components";
 import Header from "./Header";
 import Footer from "./Footer";
+import ScrollToTopBottom from "./ScrollToTopBottom";
 import { MainWrapper, Spiner } from "../styles/SharedLayoutStyles";
 import { LoadingOutlined } from "@ant-design/icons";
 import { Outlet } from "react-router-dom";
@@ -39,6 +40,7 @@ const SharedLayout: React.FC = () => {
           </Suspense>
         )}
       </MainWrapper>
+      <ScrollToTopBottom />
       <Footer />
     </>
   );

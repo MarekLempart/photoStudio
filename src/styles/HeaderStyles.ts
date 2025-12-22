@@ -235,8 +235,7 @@ export const ThemeToggleSlider = styled.div<{ $active: boolean }>`
   height: 20px;
   border-radius: 10px;
   padding: 1px;
-  background-color: ${({ $active, theme }) =>
-    $active ? theme.colors.colGrannySmith : theme.colors.colTan};
+  background-color: ${({ theme }) => theme.colors.hover};
   transition: background-color 0.6s ease;
   cursor: pointer;
 `;
@@ -248,7 +247,7 @@ export const ThemeToggleButton = styled.button<{ $active: boolean }>`
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background-color: ${({ theme }) => theme.colors.bgPrimary};
+  background-color: ${({ theme }) => theme.colors.bgToggle};
   border: none;
   display: flex;
   justify-content: center;
@@ -262,7 +261,7 @@ export const ThemeToggleButton = styled.button<{ $active: boolean }>`
   svg {
     width: 16px;
     height: 16px;
-    fill: ${({ theme }) => theme.colors.textPrimary};
+    fill: ${({ theme }) => theme.colors.textToggle};
   }
 `;
 
@@ -272,8 +271,7 @@ export const LanguageToggleSlider = styled.div<{ $isDarkMode: boolean }>`
   height: 20px;
   border-radius: 10px;
   padding: 1px;
-  background-color: ${({ $isDarkMode, theme }) =>
-    $isDarkMode ? theme.colors.colGrannySmith : theme.colors.colTan};
+  background-color: ${({ theme }) => theme.colors.hover};
   transition: background-color 0.6s ease;
   cursor: pointer;
 `;
@@ -285,7 +283,7 @@ export const LanguageToggleButton = styled.button<{ $active: boolean }>`
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background-color: ${({ theme }) => theme.colors.bgPrimary};
+  background-color: ${({ theme }) => theme.colors.bgToggle};
   border: none;
   display: flex;
   justify-content: center;

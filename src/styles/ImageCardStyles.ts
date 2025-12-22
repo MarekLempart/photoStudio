@@ -15,9 +15,11 @@ export const PositionImageContainer = styled.div`
 export const ImageCardContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
-  width: 100%;
+  width: fit-content;
+  max-width: 100%;
+  height: auto;
 
   overflow: hidden;
   margin: 0px auto;
@@ -26,13 +28,20 @@ export const ImageCardContainer = styled.div`
   box-shadow: 10px 15px 20px rgba(168, 162, 138, 0.6);
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    width: 100%;
+    width: fit-content;
   }
 `;
 
 export const StyledImageCard = styled(motion.img)`
-  width: 100%;
-  height: 100%;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(100vh - 170px);
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    max-height: 60vh;
+  }
   object-fit: cover;
   border-radius: 10px;
 `;

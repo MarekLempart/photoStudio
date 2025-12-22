@@ -5,7 +5,6 @@ import { Spin } from "antd";
 export const MainWrapper = styled.div`
   width: 100%;
   padding-top: ${({ theme }) => theme.headerHeight};
-  /* min-height: 100vh; */
   flex: 1;
   display: flex;
   flex-direction: column;

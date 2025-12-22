@@ -49,12 +49,13 @@ const usePortfolioImages = (): Category[] => {
 
             // Tworzymy kategorię, jeśli nie istnieje
             if (!categoriesMap.has(folderName)) {
-                const index = categoriesMap.size + 1;
+                // const index = categoriesMap.size + 1;
 
                 // Używamy klucza z pliku JSON, a jako fallback - nazwę folderu
                 const translatedName = t(`portfolio.categoryNames.${folderName}`, { defaultValue: folderName });
                 // Tworzymy tytuł kategorii
-                const categoryName = t('portfolio.categoryTitle', { index, name: translatedName });
+                // const categoryName = t('portfolio.categoryTitle', { index, name: translatedName });
+                const categoryName = translatedName;
                 // Pobieramy opis z pliku JSON
                 const description = t(`portfolio.descriptions.${folderName}`, { defaultValue: "Brak opisu." });
 

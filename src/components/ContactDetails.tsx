@@ -48,14 +48,14 @@ const ContactDetails: React.FC = () => {
           <FaEnvelope />
         </DetailIcon>
         <DetailText>
-          <a href="mailto:marta_mm@wp.pl">marta_mm@wp.pl</a>
+          <a href="mailto:marta_mm@wp.pl">kontakt@mmphoto.com</a>
         </DetailText>
       </DetailItem>
 
       {showMap && (
         <Map
-          latitude={51.11075}
-          longitude={17.03129}
+          latitude={51.22772}
+          longitude={17.17031}
           address={t('contactDetails.location')}
           onClose={toggleMap}
         />

@@ -24,7 +24,7 @@ const Map: React.FC<MapProps> = ({ latitude, longitude, address, onClose }) => {
       shadowSize: [41, 41], // Rozmiar cienia
     });
 
-    const map = L.map("leaflet-map").setView([latitude, longitude], 12);
+    const map = L.map("leaflet-map").setView([latitude, longitude], 16);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution:

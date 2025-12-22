@@ -1,8 +1,6 @@
 // src/components/Footer.tsx
 import {
   FooterContainer,
-  // LogoContainer,
-  // Logo,
   FooterText,
   ContactSection,
   ContactLine,
@@ -27,13 +25,8 @@ const Footer = () => {
         </ContactLine>
       </ContactSection>
 
-      {/* Logo fotografa */}
-      {/* <PhotographerLogo>
-                <img src="placeholder-for-logo.png" alt="Photographer logo" />
-            </PhotographerLogo> */}
-
       {/* Informacje na dole */}
-      <FooterText>&copy; {t('footer.copyright')}</FooterText>
+      <FooterText> {t('footer.copyright')}</FooterText>
     </FooterContainer>
   );
 };
