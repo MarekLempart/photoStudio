@@ -20,19 +20,18 @@ export const SlideshowContainer = styled.div`
 
   @media (min-width: ${({ theme }) => theme.breakpoints.mobile})
     and (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    max-height: calc(100vh - 160px);
+    height: calc(100vh - 160px);
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet})
     and (max-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    max-height: calc(100vh - 160px);
     margin: 20px auto 0px;
   }
 `;
 
 export const StyledImage = styled(motion.img)`
   width: 100%;
-  max-height: calc(100vh - 165px);
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
 `;
