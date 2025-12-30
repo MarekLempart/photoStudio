@@ -48,7 +48,7 @@ const ContactDetails: React.FC = () => {
           <FaEnvelope />
         </DetailIcon>
         <DetailText>
-          <a href="mailto:marta_mm@wp.pl">kontakt@mmphoto.com</a>
+          <a href="mailto:marta_mm@wp.pl">kontakt@mmphoto.org</a>
         </DetailText>
       </DetailItem>
 
