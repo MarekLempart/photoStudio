@@ -5,12 +5,14 @@
   "type": "module",
   "homepage": "https://MarekLempart.github.io/photoStudio/",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build:ghpages",
+    "deploy": "gh-pages -d dist",
+    "build": "tsc -b && vite build",
+    "build:ghpages": "VITE_DEPLOY_ENV=ghpages tsc -b && vite build",
+    "build:ovh": "VITE_DEPLOY_ENV=ovh tsc -b && vite build"
   },
   "repository": {
     "type": "git",

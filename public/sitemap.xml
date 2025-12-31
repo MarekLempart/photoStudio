@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Strona główna -->
   <url>
-    <loc>https://www.twoja-domena.pl/</loc>
+    <loc>https://mmphoto.org/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -10,35 +10,35 @@
 
   <!-- Portfolio - najważniejsza sekcja, często aktualizowana -->
   <url>
-    <loc>https://www.twoja-domena.pl/portfolio</loc>
+    <loc>https://mmphoto.org/portfolio</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Oferta -->
   <url>
-    <loc>https://www.twoja-domena.pl/offer</loc>
+    <loc>https://mmphoto.org/offer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- O mnie -->
   <url>
-    <loc>https://www.twoja-domena.pl/about</loc>
+    <loc>https://mmphoto.org/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Kontakt -->
   <url>
-    <loc>https://www.twoja-domena.pl/contact</loc>
+    <loc>https://mmphoto.org/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Regulamin - rzadko zmieniany, niski priorytet -->
   <url>
-    <loc>https://www.twoja-domena.pl/regulations</loc>
+    <loc>https://mmphoto.org/regulations</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
