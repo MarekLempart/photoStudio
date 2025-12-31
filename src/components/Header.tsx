@@ -141,7 +141,9 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
         className={`${isHeaderVisible ? "visible" : "hidden"} ${isMenuOpen ? "menu-open" : ""}`}
       >
         <Logo>
-          <ImageComponent />
+          <NavLink to="/" onClick={handleMenuClick} style={{ display: 'flex', alignItems: 'center' }}>
+            <ImageComponent />
+          </NavLink>
         </Logo>
 
         <Nav>
